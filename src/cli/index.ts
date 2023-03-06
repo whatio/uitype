@@ -1,2 +1,9 @@
 import { name } from '../compiler';
-console.log(`${name} cli`);
+
+
+/**
+ * @description startup
+ */
+export function startup(): void {
+  console.log(`${name} cli`);
+}

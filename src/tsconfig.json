@@ -4,5 +4,6 @@
   "references": [
     {"path": "./compiler"},
     {"path": "./cli"},
+    {"path": "./bin"}
   ]
 }

@@ -17,7 +17,7 @@
     "url": "https://github.com/github-yeah/uitype/issues"
   },
   "bin": {
-    "uitype": "dist/bin/uitypes.js"
+    "uitype": "dist/bin/index.js"
   },
   "files": [
     "dist/**/*.js",
