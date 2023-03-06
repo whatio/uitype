@@ -1,0 +1,8 @@
+{
+  "files": [],
+  "include": [],
+  "references": [
+    {"path": "./compiler"},
+    {"path": "./cli"},
+  ]
+}
