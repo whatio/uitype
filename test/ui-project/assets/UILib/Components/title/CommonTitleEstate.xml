@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="250,30" opaque="false" extention="Button" designImage="ui://v8r15bdskyk1a3tljz" designImageOffsetX="-111" designImageOffsetY="-457" designImageAlpha="0" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n14_o9jr" name="n14" src="fdona3tl9v" fileName="Images/img_title_bg4.png" pkg="i3351z1g" xy="-15,10"/>
+    <image id="n15_o9jr" name="n15" src="fdona3tl9v" fileName="Images/img_title_bg4.png" pkg="i3351z1g" xy="176,10" pivot="1,1" flip="hz"/>
+    <text id="n16_hm3b" name="title" xy="80,0" size="90,31" fontSize="22" color="#d1b586" align="center" vAlign="middle" bold="true" strokeColor="#291b07" singleLine="true" autoClearText="true" text="通用标题">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

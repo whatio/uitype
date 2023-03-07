@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="258,69" pivot="0.5,0.5" extention="Button" designImage="ui://v8r15bdsnqo9a3tla9" designImageOffsetX="-383" designImageOffsetY="-1182" designImageAlpha="0" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="conIsGray" pages="0,false,1,true" selected="1"/>
+  <displayList>
+    <image id="n14_q881" name="n14" src="r0uea3tli6" fileName="Images/button/img_newBtn_orange.png" xy="0,0" size="258,69">
+      <gearDisplay controller="conIsGray" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n18_vyx9" name="n18" src="tqo3a3tl9h" fileName="Images/button/img_newBtn_gray.png" xy="0,-1" size="258,69">
+      <gearDisplay controller="conIsGray" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <richtext id="n15_hw9k" name="title" xy="107,8" pivot="0.5,0.5" size="88,46" fontSize="34" color="#cbc5aa" align="center" vAlign="middle" ubb="true" strokeColor="#433c34" strokeSize="2" singleLine="true" autoClearText="true" text="99933">
+      <gearColor controller="conIsGray" pages="0,1" values="#ffe7aa,#8a4a1c|#cbc5aa,#433c34"/>
+      <relation target="" sidePair="center-center%,middle-middle"/>
+    </richtext>
+    <loader id="n16_hw9k" name="icon" xy="63,12" size="40,40" url="ui://v8r15bdscxl0a3tl0r" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="middle-middle"/>
+      <relation target="n15_hw9k" sidePair="right-left"/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="1.1"/>
+</component>

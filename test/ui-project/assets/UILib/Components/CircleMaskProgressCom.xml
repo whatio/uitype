@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="74,74">
+  <displayList>
+    <image id="n0_sebr" name="n0" src="sebra3tlna" fileName="Images/newimage/img_circle_mask.png" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <graph id="n1_sebr" name="maskGraph" xy="37,37" pivot="0.5,0.5" anchor="true" size="74,74" type="rect" lineSize="0" fillColor="#00ffffff">
+      <relation target="" sidePair="width-width,height-height"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+  </displayList>
+</component>

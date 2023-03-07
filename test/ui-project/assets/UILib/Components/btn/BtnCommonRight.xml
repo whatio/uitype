@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="52,130" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="conIsGray" pages="0,false,1,true" selected="0"/>
+  <displayList>
+    <image id="n0_o0zd" name="n0" src="ehy5a3tlbd" fileName="Images/button/img_rightBtn_common.png" xy="26,65" pivot="0.5,0.5" anchor="true" size="52,130">
+      <gearDisplay controller="conIsGray" pages="0"/>
+      <gearSize controller="button" pages="0,1" values="52,130,1,1|52,130,1.1,1.1" default="52,130,1,1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n3_vyx9" name="icon" xy="25,65" pivot="0.5,0.5" anchor="true" size="31,98" autoSize="true">
+      <gearSize controller="button" pages="0,1" values="31,98,1,1|178,52,1.1,1.1" default="178,52,1,1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+  </displayList>
+  <Button/>
+  <relation target="n3_vyx9" sidePair="height-height"/>
+</component>

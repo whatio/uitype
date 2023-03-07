@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="18,18" pivot="0.5,0.5" extention="Button">
+  <displayList>
+    <loader id="n0_zki2" name="n0" xy="0,0" size="18,18" url="ui://v8r15bdsswpua3tlod" autoSize="true">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="1.10"/>
+</component>

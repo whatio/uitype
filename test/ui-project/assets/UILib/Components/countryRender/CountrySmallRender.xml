@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="38,51" extention="Button">
+  <displayList>
+    <loader id="n3_iu72" name="icon" xy="0,0" size="38,51" touchable="false" url="ui://x7m15gghjtyh3ro" autoSize="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+  </displayList>
+  <Button/>
+  <relation target="n3_iu72" sidePair="width-width,height-height"/>
+</component>

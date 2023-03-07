@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="34,34" pivot="0.5,0.5" extention="Button">
+  <displayList>
+    <image id="n0_zki2" name="n0" src="zki2a3tl88" fileName="Images/newimage/btn_tanhao01.png" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="1.10"/>
+</component>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="45,45" extention="Button" mask="n6_tmqz">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n4_tmqz" name="loaderBg" xy="0,0" size="45,45" url="ui://v8r15bdslmh9a3tlla" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n3_tmqz" name="icon" xy="0,0" size="45,45" aspect="true" url="ui://v8r15bdscxl0a3tl0p" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n8_l0om" name="loaderFrame" xy="0,0" size="45,45">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <graph id="n6_tmqz" name="n6" xy="0,0" size="45,45" hideByEditor="true" type="eclipse" lineSize="0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+  </displayList>
+  <Button/>
+</component>

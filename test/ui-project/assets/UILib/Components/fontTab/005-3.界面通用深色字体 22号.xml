@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="181,32" opaque="false" extention="Label">
+  <displayList>
+    <richtext id="n0_v5p1" name="title" xy="0,0" size="181,32" fontSize="22" color="#5a463c" align="center" vAlign="middle" ubb="true" autoSize="none" autoClearText="true" text="菜单界面通用标题">
+      <relation target="" sidePair="width-width,height-height"/>
+    </richtext>
+  </displayList>
+</component>

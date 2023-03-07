@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="632,291" designImageOffsetX="-59" designImageOffsetY="-952" designImageAlpha="28" designImageLayer="1">
+  <displayList>
+    <component id="n0_lxpf" name="n0" src="fzcla3tlax" fileName="Components/frame/Frame5.xml" xy="0,0" size="632,291">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n1_lxpf" name="n1" src="c9npa3tl9n" fileName="Images/img_title_bg3.png" pkg="i3351z1g" xy="76,29" size="478,11">
+      <relation target="" sidePair="center-center"/>
+    </image>
+    <image id="n3_lxpf" name="n3" src="fn8oa3tlij" fileName="Images/img_frame4_bg.png" pkg="i3351z1g" xy="24,55" size="583,208">
+      <relation target="" sidePair="height-height,width-width,center-center,middle-middle"/>
+    </image>
+    <text id="n5_tkcq" name="n4" xy="270,19" size="90,32" fontSize="22" color="#d1b586" align="center" vAlign="middle" ubb="true" bold="true" strokeColor="#4a300a" text="获取途径"/>
+    <list id="n4_lxpf" name="listGetWay" xy="30,67" size="572,188" overflow="scroll" lineGap="4" defaultItem="ui://v8r15bdsjv7219" autoClearItems="true">
+      <relation target="" sidePair="width-width,height-height"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="108,47" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <controller name="conIsGray" pages="0,false,1,true" selected="0"/>
+  <displayList>
+    <image id="n12_ed5y" name="icon" src="y773a3tlaq" fileName="Images/button/img_small_btn_brown.png" xy="54,23" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="conIsGray" pages="0"/>
+      <gearSize controller="button" pages="0,1" values="108,47,1,1|108,47,1,1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n15_i524" name="n15" src="r0uea3tli7" fileName="Images/button/img_small_btn_gray.png" xy="54,23" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="conIsGray" pages="1"/>
+      <gearSize controller="button" pages="0,1" values="108,47,1,1|108,47,1,1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n16_i524" name="redPoint" src="nbc9a3tl2b" fileName="Images/newimage/img_top_redpoint.png" xy="84,-7" visible="false">
+      <relation target="" sidePair="right-right,top-top"/>
+    </image>
+    <richtext id="n8_g0rn" name="title" xy="-4,3" size="116,39" fontSize="28" color="#ffe7aa" align="center" vAlign="middle" ubb="true" strokeColor="#5d4a1c" strokeSize="2" singleLine="true" text="获取数据">
+      <gearColor controller="conIsGray" pages="0,1" values="#ffe7aa,#5d4a1c|#cbc5aa,#433c34"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </richtext>
+  </displayList>
+  <Button/>
+</component>

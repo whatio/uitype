@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="45,55" extention="Button">
+  <controller name="isRed" pages="0,,1," selected="1"/>
+  <displayList>
+    <image id="n0_h3kc" name="n0" src="h3kc1no8u7l" fileName="Images/arrow/img_jt.png" xy="0,0"/>
+    <image id="n1_ye20" name="redPoint1" src="nbc9a3tl2b" fileName="Images/newimage/img_top_redpoint.png" xy="15,9" scale="0.8,0.8">
+      <gearDisplay controller="isRed" pages="1"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

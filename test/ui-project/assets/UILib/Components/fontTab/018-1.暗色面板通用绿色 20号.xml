@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="170,24" opaque="false" extention="Label">
+  <displayList>
+    <richtext id="n0_v5p1" name="title" xy="0,0" size="170,24" fontSize="20" color="#54af54" align="center" vAlign="middle" ubb="true" autoSize="none" autoClearText="true" text="亮色面板通用置灰">
+      <relation target="" sidePair="width-width,height-height"/>
+    </richtext>
+  </displayList>
+</component>

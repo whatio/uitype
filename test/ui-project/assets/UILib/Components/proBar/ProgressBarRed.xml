@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="613,16" extention="ProgressBar">
+  <displayList>
+    <image id="n4_fa45" name="n4" src="sx90a3tlau" fileName="Images/newimage/img_affair_speedUpPro_bg.png" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_fa45" name="bar" src="mdi4a3tlbp" fileName="Images/proBar/img_proBar_red.png" xy="0,0" size="613,16">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n5_mdi4" name="title" xy="277,-3" size="59,22" fontSize="18" color="#ffffff" align="center" vAlign="middle" text="56/100">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

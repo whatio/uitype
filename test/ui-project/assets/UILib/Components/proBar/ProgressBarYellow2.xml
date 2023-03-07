@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="428,8" extention="ProgressBar">
+  <displayList>
+    <image id="n4_fa45" name="n4" src="qyi7a3tlcy" fileName="Images/proBar/img_proBar_H_Di1.png" xy="0,0" size="428,8">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_fa45" name="bar" src="qyi7a3tlcz" fileName="Images/proBar/img_proBar_yellow2.png" xy="0,0" size="428,8">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

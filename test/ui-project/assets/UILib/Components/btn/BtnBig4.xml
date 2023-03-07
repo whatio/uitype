@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="256,69" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="conIsGray" pages="0,false,1,true" selected="0"/>
+  <displayList>
+    <image id="n0_o0zd" name="icon" src="r0uea3tli6" fileName="Images/button/img_newBtn_orange.png" xy="128,34" pivot="0.5,0.5" anchor="true" size="256,69">
+      <gearDisplay controller="conIsGray" pages="0"/>
+      <gearSize controller="button" pages="0,1" values="256,69,1,1|256,69,1.1,1.1" default="256,69,1,1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_vyx9" name="n3" src="tqo3a3tl9h" fileName="Images/button/img_newBtn_gray.png" xy="128,34" pivot="0.5,0.5" anchor="true" size="256,69">
+      <gearDisplay controller="conIsGray" pages="1"/>
+      <gearSize controller="button" pages="0,1" values="256,69,1,1|256,69,1.1,1.1" default="256,69,1,1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n4_i524" name="redPoint" src="nbc9a3tl2b" fileName="Images/newimage/img_top_redpoint.png" xy="231,-4" visible="false">
+      <relation target="" sidePair="right-right,top-top"/>
+    </image>
+    <richtext id="n2_o0zd" name="title" xy="0,-4" size="256,69" fontSize="34" color="#ffe7aa" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#8a4a1c" strokeSize="2" singleLine="true" text="">
+      <gearColor controller="conIsGray" pages="0,1" values="#ffe7aa,#8a4a1c|#cbc5aa,#433c34"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </richtext>
+  </displayList>
+  <Button/>
+</component>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,608" designImage="ui://44r3c3udm8n96m" designImageOffsetY="-687" designImageAlpha="0">
+  <controller name="conIsShowConsume" pages="0,显示消耗,1,不显示消耗" selected="0"/>
+  <displayList>
+    <image id="n20_jnaz" name="n20" src="ursza3tlip" fileName="Images/img_icon_commonbg14.png" pkg="i3351z1g" xy="19,35" size="715,434">
+      <relation target="" sidePair="center-center,top-top"/>
+    </image>
+    <image id="n1_ifzc" name="n1" src="ifzca3tlb4" fileName="Images/newimage/img_selectBg.png" xy="569,12">
+      <relation target="n20_jnaz" sidePair="top-top"/>
+    </image>
+    <component id="n18_ifzc" name="btnAdd" src="m24da3tl9c" fileName="Components/btn/BtnBig1.xml" xy="180,576" pivot="0.5,0.5" anchor="true" size="254,64">
+      <relation target="" sidePair="bottom-bottom"/>
+      <Button title="前往战斗" titleFontSize="30" icon="ui://v8r15bdsgppja3tlam"/>
+    </component>
+    <component id="n19_ifzc" name="btnOk" src="m24da3tl9c" fileName="Components/btn/BtnBig1.xml" xy="427,544" size="254,64">
+      <relation target="" sidePair="bottom-bottom"/>
+      <Button title="领取星级奖励" icon="ui://v8r15bdsspwqa3tlc3"/>
+    </component>
+    <list id="n6_ifzc" name="troopList" xy="18,35" size="705,432" layout="row" selectionMode="multipleSingleClick" overflow="scroll" scroll="horizontal" scrollBarFlags="16" margin="2,0,2,0" lineGap="-10" colGap="-10" defaultItem="ui://6nrj9u2xrwflx">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n10_ifzc" name="txtSelect" src="oeaia3tlp9" fileName="Components/fontTab_richText/通用描述1-22.xml" xy="699,13" size="23,31">
+      <relation target="n11_ifzc" sidePair="left-right"/>
+      <Label title="20" titleColor="#54af54"/>
+    </component>
+    <component id="n11_ifzc" name="n11" src="oeaia3tlp9" fileName="Components/fontTab_richText/通用描述1-22.xml" xy="607,13" size="98,31">
+      <relation target="n1_ifzc" sidePair="left-left"/>
+      <Label title="已选部队"/>
+    </component>
+    <image id="n2_ifzc" name="n2" src="ni12a3tl93" fileName="Images/img_title_bg.png" pkg="i3351z1g" xy="20,490" size="642,72" group="n17_ifzc"/>
+    <image id="n12_ifzc" name="n12" src="cxl0a3tl0s" fileName="Images/newimage/img_icon_109.png" xy="268,496" group="n17_ifzc">
+      <relation target="n14_ifzc" sidePair="left-left"/>
+    </image>
+    <image id="n13_ifzc" name="n13" src="hj6ta3tlqs" fileName="Images/newimage/img_speedNewIcon.png" xy="394,489" size="45,42" group="n17_ifzc">
+      <relation target="n14_ifzc" sidePair="left-left"/>
+    </image>
+    <text id="n14_ifzc" name="n14" xy="132,496" size="92,32" group="n17_ifzc" font="SimHei" fontSize="22" color="#9a8862" leading="1" bold="true" text="行军消耗">
+      <relation target="" sidePair="left-left"/>
+    </text>
+    <richtext id="n15_ifzc" name="TxtConsume2" xy="305,496" size="81,32" group="n17_ifzc" fontSize="22" color="#7a6957" leading="1" ubb="true" singleLine="true" text="1234567">
+      <relation target="n12_ifzc" sidePair="left-right"/>
+    </richtext>
+    <richtext id="n16_ifzc" name="TxtConsume1" xy="437,496" size="147,32" group="n17_ifzc" fontSize="22" color="#7a6957" leading="1" ubb="true" singleLine="true" text="30秒123123456">
+      <relation target="n13_ifzc" sidePair="left-right"/>
+    </richtext>
+    <group id="n17_ifzc" name="n17" xy="20,489" size="642,73" visible="false" advanced="true">
+      <gearDisplay controller="conIsShowConsume" pages="0"/>
+    </group>
+  </displayList>
+</component>

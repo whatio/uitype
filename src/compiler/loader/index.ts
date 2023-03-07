@@ -1,0 +1,1 @@
+export { loadConfig, type Config } from './load-config';

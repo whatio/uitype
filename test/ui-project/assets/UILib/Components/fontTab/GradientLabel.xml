@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="67,34" extention="Label">
+  <displayList>
+    <richtext id="n0_rag4" name="txtContent" xy="0,0" size="67,34" fontSize="30" color="#ffffff" align="center" vAlign="middle" bold="true" text="测试">
+      <relation target="" sidePair="center-center"/>
+    </richtext>
+    <graph id="n1_rag4" name="maskGraph" xy="33,17" pivot="0.5,0.5" anchor="true" size="67,34" type="rect" lineSize="0">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+  </displayList>
+  <relation target="n0_rag4" sidePair="width-width,height-height"/>
+</component>

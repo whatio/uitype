@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="701,694" extention="Button" designImageOffsetX="-26" designImageOffsetY="-129" designImageAlpha="0" designImageLayer="1">
+  <displayList>
+    <image id="n14_frgm" name="n14" src="frgm1no8u17" fileName="Images/frameImage/img_center.png" xy="9,34" size="683,587">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n15_frgm" name="n15" src="frgm1no8u16" fileName="Images/frameImage/img_bottom.png" xy="9,621" size="683,74">
+      <relation target="n14_frgm" sidePair="bottom-bottom"/>
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <image id="n10_qcgr" name="n10" src="c3vb1no8u14" fileName="Images/frameImage/img_title1.png" xy="0,1" pivot="0.5,0.5" size="701,83">
+      <relation target="" sidePair="width-width,center-center"/>
+    </image>
+    <component id="n13_lxex" name="close" src="lxexa3tlqi" fileName="Components/btn/BtnWindowClose1.xml" xy="598,-14">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n12_qcgr" name="title" src="i098a3tlpi" fileName="Components/fontTab_richText/通用标题3-34.xml" xy="241,15" size="219,46">
+      <relation target="" sidePair="center-center,top-top"/>
+      <Label title="标题"/>
+    </component>
+  </displayList>
+  <Button/>
+</component>

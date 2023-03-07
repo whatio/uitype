@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="450,225" extention="Button" designImageOffsetX="-58" designImageOffsetY="-273" designImageAlpha="48" designImageLayer="1">
+  <controller name="conIsVisibleImg" pages="0,false,1,true" selected="0"/>
+  <displayList>
+    <image id="n11_qcgr" name="n11" src="c9npa3tl9l" fileName="Images/img_icon_commonbg8.png" pkg="i3351z1g" xy="0,0" size="450,225">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n12_10rjl" name="icon" xy="225,6" pivot="0.5,0.5" anchor="true" size="322,140" autoSize="true">
+      <relation target="" sidePair="center-center,top-top"/>
+    </loader>
+  </displayList>
+  <Button/>
+</component>

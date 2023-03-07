@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="572,66" designImageOffsetX="-88" designImageOffsetY="-544" designImageAlpha="66" designImageLayer="1">
+  <controller name="conShowHero" pages="0,false,1,true" selected="0"/>
+  <controller name="conOpen" pages="0,,1," selected="0">
+    <remark page="0" value="true"/>
+    <remark page="1" value="false"/>
+  </controller>
+  <controller name="conBtnIcon" pages="0,,1,,2," selected="2">
+    <remark page="0" value="前往"/>
+    <remark page="1" value="征收"/>
+    <remark page="2" value="使用"/>
+  </controller>
+  <controller name="numCon" pages="0,,1," selected="1"/>
+  <displayList>
+    <image id="n5_iawc" name="n5" src="kciv1no8tzk" fileName="Images/newimage/img_getway_bg.png" xy="0,0" size="572,66">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n6_y773" name="n6" src="y773k3s" fileName="Images/getWay/img_getway_logobg.png" xy="0,6" visible="false"/>
+    <image id="n11_jp0t" name="n11" src="jp0t1no8u0w" fileName="Images/newimage/img_getway_mask.png" xy="0,0" size="572,66" alpha="0.4">
+      <gearDisplay controller="conOpen" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n4_vb1v" name="loaderIcon" xy="10,17" size="34,32" visible="false" url="ui://v8r15bdsy773k3r" align="center" vAlign="middle" fill="scale"/>
+    <component id="n3_jv72" name="btnGo" src="kciv1no8tzl" fileName="Components/btn/BtnIcon.xml" xy="448,9" size="100,48">
+      <gearDisplay controller="conOpen" pages="0"/>
+      <gearIcon controller="conBtnIcon" pages="1,2" values="ui://v8r15bdsgauc1no8u0z|ui://v8r15bdsh8v71no8u7i" default="ui://v8r15bdskciv1no8tzj"/>
+      <relation target="" sidePair="middle-middle,right-right"/>
+      <Button title="前 往" icon="ui://v8r15bdsh8v71no8u7i"/>
+    </component>
+    <list id="n9_eymm" name="listHero" xy="0,30" size="417,26" layout="flow_hz" overflow="scroll" scrollBarFlags="32" lineItemCount="2" defaultItem="ui://v8r15bdsdr9ba3tlpw">
+      <gearDisplay controller="conShowHero" pages="1"/>
+      <gearXY controller="conShowHero" pages="0,1" values="0,30|18,42"/>
+      <item title="周瑜(999)"/>
+      <item title="周瑜(1)"/>
+      <item title="周瑜(99)"/>
+      <item title="周瑜(9)"/>
+      <item title="周瑜(999)"/>
+      <item title="周瑜(999)"/>
+    </list>
+    <component id="n2_jv72" name="txtName" src="dr9ba3tlpw" fileName="Components/fontTab_richText/通用描述2-22.xml" xy="18,17" size="409,32">
+      <gearXY controller="conShowHero" pages="0,1" values="18,17|18,8"/>
+      <gearColor controller="conOpen" pages="1" values="#736d60" default="#e9e1ce"/>
+      <relation target="" sidePair="width-width"/>
+      <Label title="系统名称" titleColor="#e9e1ce"/>
+    </component>
+    <component id="n10_ri0i" name="txtTip" src="dr9ba3tlpw" fileName="Components/fontTab_richText/通用描述2-22.xml" xy="556,17" pivot="1,0" anchor="true" size="188,32">
+      <gearDisplay controller="conOpen" pages="1"/>
+      <gearXY controller="conShowHero" pages="0,1" values="556,17|556,17"/>
+      <relation target="" sidePair="middle-middle,right-right"/>
+      <Label title="宫殿8级开启" titleColor="#c3b9a0"/>
+    </component>
+    <text id="n13_h8v7" name="yyTxt" xy="151,17" size="91,32" fontSize="22" color="#e9e1ce" align="center" vAlign="middle" ubb="true" autoSize="none" text="拥有：">
+      <gearDisplay controller="numCon" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n14_h8v7" name="numTxt" xy="235,17" size="91,32" fontSize="22" color="#e9e1ce" vAlign="middle" ubb="true" autoSize="none" autoClearText="true" text="2">
+      <gearDisplay controller="numCon" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <relation target="n9_eymm" sidePair="bottomext-bottom"/>
+</component>

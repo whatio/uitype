@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="25,23">
+  <controller name="conStarColor" pages="0,blue,1,purple,2,orange,3,red,5,empty_blue,6,empty_purple,7,empty_orange,8,empty_red" selected="4"/>
+  <displayList>
+    <loader id="n1_g63k" name="loaderStar" xy="0,0" size="25,23" url="ui://v8r15bdsj045a3tl8n" align="center" vAlign="middle">
+      <gearIcon controller="conStarColor" pages="0,1,2,3,5,6,7,8" values="ui://v8r15bdsj045a3tl8j|ui://v8r15bdsj045a3tl8k|ui://v8r15bdsj045a3tl8l|ui://v8r15bdsj045a3tl8m|ui://v8r15bdsj045a3tl8n|ui://v8r15bdsj045a3tl8o|ui://v8r15bdsj045a3tl8p|ui://v8r15bdsj045a3tl8q"/>
+    </loader>
+  </displayList>
+</component>

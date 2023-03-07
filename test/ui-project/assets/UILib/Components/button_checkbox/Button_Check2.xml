@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="20,20" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="1"/>
+  <displayList>
+    <image id="n4_g63k" name="n4" src="jxs4a3tla2" fileName="Images/newimage/img_btnSel_bg.png" xy="0,0" size="20,20">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n5_g63k" name="n5" src="ihdqa3tlbh" fileName="Images/newimage/img_select1.png" xy="-12,-5" aspect="true">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>
