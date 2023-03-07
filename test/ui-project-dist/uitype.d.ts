@@ -1,4 +1,4 @@
-import { fairygui } from "./fairygui";
+import * as fairygui from 'fairygui-cc';
 // 没有设置导出且没有被其他组件引用的组件将不会被导出类型!
 // 不符合命名规则的组件,导出名将使用`__ID__${组件id}`来代替!
 // 不符合变量命名规则的属性(不符合正则:`/^[$_a-zA-Z]+[$_dw]*$/`)不会被导出!
