@@ -8,4 +8,4 @@ export const sys_name_reg = /^n[\d]+$/;
 export const file_extension = /\.[^\.]+$/;
 
 /** @description 文件包路径 */
-export const package_path = /^[\\\/]*([^\.]+)/;
+export const package_path = /([^\\\/\.]+[\\\/]+)+/;

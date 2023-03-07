@@ -1,6 +1,6 @@
 import { basename, dirname, join } from "path";
 import type { Component, ComponentProfile, Package } from "../types";
-import { getTagType, legally_name_reg } from "../utils";
+import { getTagType, idToName, legally_name_reg } from "../utils";
 import { loadComponent } from "./load-component";
 import { loadConfig } from "./load-config";
 
@@ -57,15 +57,23 @@ export function loadPackage(configFile: string): Package | undefined {
         return;
       }
 
-      // 处理不合规的名字
-      if(legally_name_reg.test(component.name) === false) {
-        component.name = `__ID__${profile.id}`;
+      // 属性列表为空的组件只导出扩展类型
+      if(component.attributes.length === 0) {
+        componentPathMap.set(profile.id, component.extention);
+        return;
       }
+
+      // 不合规的名字以ID代替
+      if(legally_name_reg.test(component.name) === false) {
+        component.name = idToName(profile.id);
+      }
+
+      // 包内引用路径
+      const internalPath = profile.path.replace(/^[\\\/]+|[\\\/]+$/g, '').replace(/[\\\/]+/g, '.');
       
       // 组件引用地址
-      const componentPath = join(packageName, profile.path, component.name).replace(/[\/|\\]+/g, '.');
+      const componentPath = join(packageName, profile.path, component.name).replace(/[\\\/]+/g, '.');
       componentPathMap.set(profile.id, componentPath);
-
 
 
     });
