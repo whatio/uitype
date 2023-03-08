@@ -32,3 +32,9 @@ export function compilePackage(
   return ''
 
 }
+
+type LongKey<T extends string> = `__${T}`;
+
+type LongA = LongKey<'a'>;
+
+type A = LongA extends LongKey<infer R> ? R : never;

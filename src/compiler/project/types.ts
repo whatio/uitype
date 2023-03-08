@@ -59,7 +59,10 @@ export interface Package {
 }
 
 
-
+// 新增下划线前缀
+export type UnderlinePrefix<T extends string> = `_${T}`;
+// 移除下划线前缀
+export type CutUnderline<T> = T extends UnderlinePrefix<infer R> ? R : never;
 
 
 
