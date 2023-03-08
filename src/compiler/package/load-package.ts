@@ -1,8 +1,9 @@
 import { basename, join } from 'path';
-import { pckageIdToName, legally_name_reg, componentIdToName } from '../utils';
-import { loadConfig } from '../loader';
-import type { ComponentProfile, Package } from './types';
 import { existsSync, readdirSync } from 'fs';
+import { componentIdToName, pckageIdToName, legally_name_reg } from '../utils';
+import { loadConfig } from '../loader';
+import type { ComponentProfile } from '../component';
+import type { Package } from './types';
 
 /**
  * @description 加载包
@@ -48,8 +49,7 @@ export function loadPackage(packagePath: string): Package | undefined {
 
     // 解析组件profile
     const profile = element.attributes as Pick<ComponentProfile, keyof ComponentProfile>;
-    profile.tagName = element.name;
-
+    
     // 组件包内路径
     const internalPackage = profile.path.replace(/^[\\\/]+|[\\\/]+$/g, "").replace(/[\\\/]+/g, ".");
     profile.internalPackage = internalPackage;

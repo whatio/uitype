@@ -1,54 +1,36 @@
-import { existsSync, readdirSync, readFileSync } from "fs";
+import { existsSync, readdirSync } from "fs";
 import { join } from "path";
-import type { Project, ProjectConfig } from './types';
+import { loadPackage, type Package } from "../package";
 
-export function loadProject(projectRoot: string): Project | undefined {
-
-  // 读取项目配置
-  let config: ProjectConfig;
-  const defaultConfigContent = readFileSync('./default-config.json').toString('utf-8');
-  const defaultConfig = JSON.parse(defaultConfigContent) as ProjectConfig;
-  const projectConfigFile = join(projectRoot, 'config.uitype.json');
-  if(existsSync(projectConfigFile)) {
-    const projectConfigContent = readFileSync(projectConfigFile).toString('utf-8');
-    const projectConfig = JSON.parse(projectConfigContent) as ProjectConfig;
-    config = {
-      ...projectConfig,
-      ...defaultConfig
-    }
-  } 
-  else {
-    config = defaultConfig;
-  }
-  const { compilerOptions } = config;
-
+/**
+ * @description 加载包映射
+ * - { 包ID: Package}
+ * @param {string} assetsPath 包资源根路径
+ * @param {string[]} [include] 如果设置此参数，则仅加载被指定的包
+ * @param {string[]} [exclude] 如果设置此参数，则不加载被指定的包
+ * @return {*}  {(Map<string, Package> | undefined)}
+ */
+export function loadProject(assetsPath: string, include?: string[], exclude?: string[]): Map<string, Package> | undefined {
   // 检查资源目录
-  const assetsRoot = join(projectRoot, compilerOptions.assetsName ?? 'assets');
-  if(existsSync(assetsRoot) === false) {
-    console.log('找不到项目资源目录！ derectory: ' + assetsRoot);
+  if(existsSync(assetsPath) === false) {
+    console.log('找不到项目资源目录！ assetsPath: ' + assetsPath);
     return undefined;
   }
 
-  const { include, exclude } = compilerOptions;
-
-  readdirSync(assetsRoot).forEach(name => {
-
+  // 加载映射列表
+  const packageMap = new Map<string, Package>();
+  readdirSync(assetsPath).forEach(name => {
     if(exclude?.length && exclude.includes(name)) {
       return;
     }
     if(include?.length && include.includes(name) === false) {
       return;
     }
-
-    const packagePath = join(assetsRoot, name);
-
+    const packagePath = join(assetsPath, name);
+    const pkg = loadPackage(packagePath);
+    if(pkg !== undefined) {
+      packageMap.set(pkg.id, pkg);
+    }
   });
-
-
-
-
-  const project: Project = {
-    config
-  }
-  return project;
+  return packageMap;
 }
