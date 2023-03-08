@@ -25,23 +25,23 @@ export function compilePackage(packagePath: string): CodeSnippet | undefined {
     return undefined;
   }
 
-  // 包名
-  const packageName = basename(packagePath);
+  // 发布名
+  const publishElement = rootConfig?.elements?.find((element) => element.name === 'publish');
+  // 包发布名
+  const publishName = publishElement?.attributes?.name ?? basename(packagePath);
   // 包别名
-  const packageAliasName = pckageIdToName(packageID);
+  const publishAliasName = pckageIdToName(packageID);
 
   // 组件代码片段分组
   const group = new Map<string, CodeSnippet[]>();
-
-  // 加载组件列表
   rootConfig?.elements
-    ?.find((element) => element.name === "resources")
+    ?.find((element) => element.name === 'resources')
     ?.elements?.forEach((element) => {
       if(!element.attributes) {
         return;
       }
-      element.attributes.tag = element.name;
       const profile = element.attributes as Pick<ComponentProfile, keyof ComponentProfile>;
+      profile.tag = element.name;
 
       // 非自定义组件无需导出
       if(profile.tag !== 'component') {
@@ -79,8 +79,8 @@ export function compilePackage(packagePath: string): CodeSnippet | undefined {
   
   // 包代码
   const packageSnippet: CodeSnippet = [];
-  packageSnippet.push(`import ${packageAliasName} = ${packageName};`);
-  packageSnippet.push(`namespace ${packageName} {`);
+  packageSnippet.push(`import ${publishAliasName} = ${publishName};`);
+  packageSnippet.push(`namespace ${publishName} {`);
   group.forEach((list, internalPackage) => {
     const internalCodeSnippets = list.flat();
     if(internalPackage.length === 0) {

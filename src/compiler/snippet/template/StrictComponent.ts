@@ -1,4 +1,4 @@
-import type { CodeSnippet } from "../types";
+import type { CodeSnippet } from "../../types";
 
 // 严格约束`getController`参数类型
 type StrictGetController<T, U extends string | undefined> = T extends { getController(name: string): infer R }
@@ -32,6 +32,7 @@ export const StrictComponentName = 'StrictComponent';
 
 // 严格模式组件类型代码片段
 export const StrictComponentSnippet: CodeSnippet = [
+  '// ==================================== strict ======================================',
   '// 严格约束`getController`参数类型',
   'type StrictGetController<T, U extends string | undefined> = T extends { getController(name: string): infer R }',
   '  ? { getController(name: U extends undefined ? never : U): R } & Omit<T, "getController">',
@@ -58,4 +59,5 @@ export const StrictComponentSnippet: CodeSnippet = [
   '  Controller extends string | undefined = undefined,',
   '  Transition extends string | undefined = undefined',
   '> = StrictGetChild<StrictGetController<StrictGetTransition<Component, Transition>, Controller>, DisplayList>;',
+  '// ==================================== strict ======================================'
 ];

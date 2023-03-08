@@ -1,14 +1,14 @@
 import type { CodeSnippet, ComponentAttribute } from "../types";
 import { type Config, loadConfig } from "../loader";
 import { basename } from "path";
-import { StrictComponentName } from "../template";
+import { StrictComponentName } from "../snippet";
 import { 
-  getTagType,
   componentIdToName,
   pckageIdToName,
   legally_name_reg,
   sys_name_reg 
 } from "../utils";
+import { DefaultConfig } from "../project";
 
 /**
  * @description 编译组件
@@ -81,7 +81,7 @@ export function compileComponent(configFile: string, publishName: string): CodeS
               ? `${reference}${internalPackage}.${componentName}`
               : `${reference}${componentName}`;
           // 设置自定义组件属性
-          displayList.push(`readonly ${attribute.name}: ${reference};`)
+          displayList.push(`readonly ${attribute.name}: ${reference};`);
         })
         break;
     }
@@ -122,4 +122,10 @@ function getAttribute(config: Config): ComponentAttribute | undefined {
   }
   attribute.tag = config.name;
   return attribute;
+}
+
+// tag -> type
+function getTagType(tag: string): string {
+  const type = DefaultConfig.tagMapping[tag as keyof typeof DefaultConfig.tagMapping] ?? tag;
+  return type;
 }

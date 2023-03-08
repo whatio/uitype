@@ -23,7 +23,7 @@ export function loadConfig(file: string): Config | undefined {
     console.log(`[配置文件不存在！] [file=${file}]`);
     return undefined;
   }
-  const fileContent = readFileSync(file).toString();
+  const fileContent = readFileSync(file).toString('utf-8');
   const config = xml2js(fileContent) as Config;
   return config;
 }
