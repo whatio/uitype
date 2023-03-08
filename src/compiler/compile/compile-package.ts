@@ -2,7 +2,7 @@ import { basename, join } from 'path';
 import { pckageIdToName, legally_name_reg, componentIdToName } from '../utils';
 import { loadConfig } from '../loader';
 import { compileComponent } from './compile-component';
-import type { CodeSnippet, ComponentProfile } from '../types';
+import type { CodeSnippet, ComponentProfile } from './types';
 
 /**
  * @description 编译包

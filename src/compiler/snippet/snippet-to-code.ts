@@ -1,4 +1,5 @@
-import type { CodeSnippet } from "../types";
+// 代码片段
+export type CodeSnippet = string | CodeSnippet[];
 
 /**
  * @description 代码片段转成代码

@@ -2,7 +2,7 @@ import { existsSync, readdirSync } from "fs";
 import { join } from "path";
 import { emit } from "../emit";
 import { toCode, StrictComponentSnippet } from "../snippet";
-import type { CodeSnippet, CompilerOptions } from "../types";
+import type { CodeSnippet, CompilerOptions } from "./types";
 import { compilePackage } from "./compile-package";
 
 /**

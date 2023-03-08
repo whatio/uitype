@@ -1,4 +1,4 @@
-import type { CodeSnippet, ComponentAttribute } from "../types";
+import type { CodeSnippet, ComponentAttribute } from "./types";
 import { type Config, loadConfig } from "../loader";
 import { basename } from "path";
 import { StrictComponentName } from "../snippet";
@@ -8,7 +8,7 @@ import {
   legally_name_reg,
   sys_name_reg 
 } from "../utils";
-import { DefaultConfig } from "../project";
+// import { DefaultConfig } from "../project";
 
 /**
  * @description 编译组件
@@ -126,6 +126,7 @@ function getAttribute(config: Config): ComponentAttribute | undefined {
 
 // tag -> type
 function getTagType(tag: string): string {
-  const type = DefaultConfig.tagMapping[tag as keyof typeof DefaultConfig.tagMapping] ?? tag;
-  return type;
+  // const type = DefaultConfig.tagMapping[tag as keyof typeof DefaultConfig.tagMapping] ?? tag;
+  // return type;
+  return tag;
 }
