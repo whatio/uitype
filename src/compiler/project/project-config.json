@@ -1,7 +1,9 @@
 {
-  "publishName": "uit",
-  "assetsName": "assets",
-  "outFile": "test/ui-project-dist/uitype.d.ts",
+  "compilerOptions": {
+    "publishName": "uit",
+    "assetsName": "assets",
+    "outFile": "./uitype/uitype.d.ts"
+  },
   "tagMapping": {
     "group": "fairygui.GGroup",
     "Group": "fairygui.GGroup",

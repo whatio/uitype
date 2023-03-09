@@ -1,4 +1,4 @@
-import type { CodeSnippet } from "../../types";
+import type { CodeSnippet } from "../snippet-to-code";
 
 // 严格约束`getController`参数类型
 type StrictGetController<T, U extends string | undefined> = T extends { getController(name: string): infer R }

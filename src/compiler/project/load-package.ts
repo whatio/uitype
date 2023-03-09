@@ -41,8 +41,9 @@ export function loadPackage(packagePath: string): Package | undefined {
 
   // 组件引用类型地址映射列表 - {组件ID: 组件引用类型地址}
   const referenceMap = new Map<string, string>();
-  // 待导出的自定义组件列表
-  const components: Component[] = [];
+  // 待导出的自定义组件列表映射 - { 包内引用地址: Component[] }
+  const componentListMap = new Map<string, Component[]>();
+
   // 解析组件列表
   rootConfig?.elements?.find((element) => element.name === "resources")?.elements?.forEach(element => {
     // 非法组件
@@ -83,14 +84,20 @@ export function loadPackage(packagePath: string): Package | undefined {
     // 完整的包引用地址路径
     const fullPkg = internalPkg.length > 0 ? `${name}.${internalPkg}.${cname}`: `${name}.${cname}`;
     referenceMap.set(profile.id, fullPkg);
-    components.push(component);
+
+    let list = componentListMap.get(internalPkg);
+    if(list === undefined) {
+      list = [];
+      componentListMap.set(internalPkg, list);
+    }
+    list.push(component);
   });
 
-  return { id, name, aliasName, referenceMap, components };
+  return { id, name, aliasName, referenceMap, componentListMap };
 }
 
 /**
- * @description 加载组件包列表
+ * @description 加载组件包映射列表
  * @param {string} packageRoot 组件包资源根路径
  * @param {string[]} [include] 如果设置此参数，则仅加载被指定的包
  * @param {string[]} [exclude] 如果设置此参数，则不加载被指定的包

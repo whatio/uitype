@@ -52,22 +52,9 @@ export interface Package {
   readonly aliasName: string;
   // 组件引用类型地址映射列表 - {组件ID: 组件引用类型地址}
   readonly referenceMap: Map<string, string>;
-  // 待导出的自定义组件映射列表 {组件id: Component}
-  readonly componentMap: Map<string, Component>;
-  // 待导出的自定义组件列表
-  readonly components: Component[];
+  // 待导出的自定义组件列表映射 - { 包内引用地址: Component[] }
+  readonly componentListMap: Map<string, Component[]>;
 }
-
-
-// 新增下划线前缀
-export type UnderlinePrefix<T extends string> = `_${T}`;
-// 移除下划线前缀
-export type CutUnderline<T> = T extends UnderlinePrefix<infer R> ? R : never;
-
-
-
-
-
 
 /**
  * @description 编译选项
@@ -75,6 +62,8 @@ export type CutUnderline<T> = T extends UnderlinePrefix<infer R> ? R : never;
 export interface CompilerOptions {
   // 发布名称
   readonly publishName: string;
+  // 项目资源根目录名 默认是`assets`
+  readonly assetsName?: string;
   // 输出文件，不设置则只编译不输出
   readonly outFile?: string;
   // 仅编译指定包
@@ -88,7 +77,12 @@ export interface CompilerOptions {
  */
 export interface ProjectConfig {
   // 编译选项
-  readonly compilerOptions: CompilerOptions;
+  compilerOptions: CompilerOptions;
   // 类型映射
-  readonly tagMapping?: Record<string, string | undefined>;
+  tagMapping?: Record<string, string | undefined>;
 }
+
+// 新增下划线前缀
+export type UnderlinePrefix<T extends string> = `_${T}`;
+// 移除下划线前缀
+export type CutUnderline<T> = T extends UnderlinePrefix<infer R> ? R : never;
