@@ -1,5 +1,5 @@
 import { StrictComponentName, CodeSnippet } from "../snippet";
-import { tagTypeOf } from "./tag-type-of";
+import { tagTypeOf } from "../project/tag-type-of";
 import type { Component, ComponentAttribute } from "./types";
 
 /**

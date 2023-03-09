@@ -1,6 +1,6 @@
 import { Config, loadConfig } from "../loader";
 import { legally_name_reg, sys_name_reg } from "../utils";
-import { tagTypeOf } from "./tag-type-of";
+import { tagTypeOf } from "../project/tag-type-of";
 import type { Component, ComponentAttribute } from "./types";
 
 /**

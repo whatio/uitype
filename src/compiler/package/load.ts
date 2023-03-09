@@ -2,9 +2,9 @@ import { basename, join } from 'path';
 import { existsSync, readdirSync } from 'fs';
 import { componentIdToName, pckageIdToName, legally_name_reg } from '../utils';
 import { loadConfig } from '../loader';
-import { tagTypeOf } from './tag-type-of';
-import { loadComponent } from './load-component';
-import type { Component, ComponentProfile, Package } from './types';
+import { tagTypeOf } from '../project/tag-type-of';
+import { loadComponent, type Component, type ComponentProfile } from '../component';
+import type { Package } from './types';
 
 /**
  * @description 加载组件包

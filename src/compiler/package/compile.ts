@@ -1,6 +1,6 @@
-import { compileComponent } from "./compile-component";
+import { compileComponent, ComponentAttribute } from "../component";
 import type { CodeSnippet } from "../snippet";
-import type { Package, ComponentAttribute } from "./types";
+import type { Package } from "./types";
 
 /**
  * @description 编译组件包
