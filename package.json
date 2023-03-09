@@ -41,6 +41,7 @@
     "build": "tsc -b src",
     "predev": "npm run clean",
     "dev": "tsc -b --watch",
-    "test": "ts-node test/index.ts"
+    "test": "ts-node test/index.ts",
+    "test2": "uitype -h"
   }
 }

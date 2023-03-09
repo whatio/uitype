@@ -8,7 +8,7 @@ function startup(): void {
   let assetsRoot = 'test/ui-project';
   let outFile = 'test/ui-project-dist/uitype.d.ts';
 
-  // assetsRoot = 'F:/cocos/tool/FairyGUI-Project/assets';
+  // assetsRoot = 'F:/cocos/tool/FairyGUI-Project';
   // outFile = 'F:/cocos/client/cocos_slg/assets/lib/uitype/uitype.d.ts';
 
   compileProject(assetsRoot, { publishName: 'uit', outFile });
