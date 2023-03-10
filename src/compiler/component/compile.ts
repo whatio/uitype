@@ -24,7 +24,7 @@ export function compileComponent(
       case 'controller':
         controllers.push(`'${attribute.name}'`)
         break;
-      case 'transitions':
+      case 'transition':
         transitions.push(`'${attribute.name}'`)
         break;
       default:
