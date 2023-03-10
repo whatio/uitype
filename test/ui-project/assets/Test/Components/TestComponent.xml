@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="69,159">
+  <displayList>
+    <component id="n0_fnr8" name="testComponent" src="fnr81no8u83" fileName="Components/TestComponent.xml" pkg="v8r15bds" xy="0,0"/>
+    <text id="n1_fnr8" name="title" xy="9,135" size="36,24" fontSize="16" color="#f5dc85" text="文本"/>
+  </displayList>
+</component>

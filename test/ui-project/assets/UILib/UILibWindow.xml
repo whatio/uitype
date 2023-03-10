@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="76,112">
+  <displayList>
+    <component id="n14_fnr8" name="testComponent" src="fnr81no8u83" fileName="Components/TestComponent.xml" xy="0,0"/>
+    <text id="n15_fnr8" name="title" xy="0,88" size="76,24" fontSize="16" color="#f5dc85" text="我是title"/>
+  </displayList>
+</component>

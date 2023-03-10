@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<component size="103,32" extention="Label">
-  <displayList>
-    <richtext id="n1_oeai" name="title" xy="0,0" size="103,32" fontSize="22" color="#e9e1ce" align="center" vAlign="middle" ubb="true" autoSize="none" autoClearText="true" text="通用描述2">
-      <relation target="" sidePair="width-width,height-height"/>
-    </richtext>
-  </displayList>
-</component>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="56,56" pivot="0.5,0.5" extention="Button">
-  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="3"/>
   <controller name="conIsGray" pages="0,,1," selected="0"/>
   <displayList>
-    <loader id="n4_jqxf" name="icon" xy="0,0" size="56,56" url="ui://v8r15bdsjv72a3tl1q" fill="scale">
+    <loader id="n4_jqxf" name="icon" xy="0,0" size="56,56" url="ui://v8r15bds100dta3tl9f" fill="scale">
       <gearLook controller="conIsGray" pages="0" values="1,0,0,1" default="1,0,1,1"/>
       <relation target="" sidePair="width-width,height-height"/>
     </loader>

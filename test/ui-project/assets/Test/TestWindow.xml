@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="180,289">
+  <displayList>
+    <component id="n0_fnr8" name="uilibWindow" src="omga1no8u82" fileName="UILibWindow.xml" pkg="v8r15bds" xy="0,0"/>
+    <component id="n1_fnr8" name="testComponent" src="fnr80" fileName="Components/TestComponent.xml" xy="111,2"/>
+    <graph id="n2_fnr8" name="myShape" xy="25,189" size="100,100" type="rect"/>
+  </displayList>
+</component>

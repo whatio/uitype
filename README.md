@@ -19,39 +19,6 @@
 - [开发环境](#开发者模式)
 - [代码实例](#代码实例)
 
-## 开发环境
-
-### 工程安装
-
-```bash
-# 安装依赖
-npm install
-
-# 安装本地cli测试环境
-npm link
-
-# 卸载本地cli测试环境
-npm unlink uitype -g
-```
-
-### 脚本命令
-
-```bash
-# 构建
-npm run build
-```
-
-### 开发调试
-
-使用`vscode`可以直接`F5`调试
-
-自动构建：
-
-```bash
-# 开发模式
-npm run dev
-```
-
 ## 生产环境
 
 ### 安装
@@ -124,6 +91,39 @@ const ctrl = view.getController("c1");
 const trans = view.getTransition("t1");
 
 // 也可以使用`Proxy`代理属性的获取，这个很简单，有手就行
+```
+
+## 开发环境
+
+### 工程安装
+
+```bash
+# 安装依赖
+npm install
+
+# 安装本地cli测试环境
+npm link
+
+# 卸载本地cli测试环境
+npm unlink uitype -g
+```
+
+### 脚本命令
+
+```bash
+# 构建
+npm run build
+```
+
+### 开发调试
+
+使用`vscode`可以直接`F5`调试
+
+自动构建：
+
+```bash
+# 开发模式
+npm run dev
 ```
 
 ## 未完待续

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<component size="103,32" extention="Label">
-  <displayList>
-    <text id="n1_oeai" name="title" xy="0,0" size="103,32" fontSize="22" color="#ff2323" align="center" vAlign="middle" ubb="true" autoSize="none" autoClearText="true" text="通用红色1">
-      <relation target="" sidePair="width-width,height-height"/>
-    </text>
-  </displayList>
-</component>

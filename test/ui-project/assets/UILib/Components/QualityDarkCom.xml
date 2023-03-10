@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<component size="632,290">
-  <displayList>
-    <loader id="n0_kq11" name="loaderBg" xy="0,0" size="632,290" url="ui://x7m15gghjtyh2lf" align="center" vAlign="middle" fill="scaleFree">
-      <relation target="" sidePair="width-width,height-height"/>
-    </loader>
-  </displayList>
-</component>

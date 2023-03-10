@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<component size="189,32" opaque="false" extention="Label">
-  <displayList>
-    <richtext id="n0_v5p1" name="title" xy="0,0" size="189,32" fontSize="22" color="#e9e1ce" align="center" vAlign="middle" ubb="true" autoSize="none" bold="true" autoClearText="true" text="三级弹窗通用字体">
-      <relation target="" sidePair="width-width,height-height"/>
-    </richtext>
-  </displayList>
-</component>

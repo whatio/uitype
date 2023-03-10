@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<component size="186,26" opaque="false" extention="Label">
-  <displayList>
-    <richtext id="n0_v5p1" name="title" xy="0,0" size="191,26" fontSize="22" color="#d5c8ab" align="center" vAlign="middle" ubb="true" bold="true" strokeColor="#32210e" autoClearText="true" text="二级弹窗二级标题"/>
-  </displayList>
-  <relation target="n0_v5p1" sidePair="width-width,height-height"/>
-</component>

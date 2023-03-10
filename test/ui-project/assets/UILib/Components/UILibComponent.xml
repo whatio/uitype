@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="69,85">
+  <controller name="ctrl" pages="0,,1,,2," selected="0"/>
+  <controller name="ctrl2" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n0_fnr8" name="btnAdd" src="g0rn1j" fileName="Components/btn/BtnAdd.xml" xy="0,0"/>
+    <text id="n1_fnr8" name="txtName" xy="1,61" size="68,24" fontSize="16" color="#f5dc85" text="我是文本"/>
+  </displayList>
+</component>
