@@ -31,7 +31,7 @@ npm install uitype -g
 npm install uitype --save
 ```
 
-### 常用指令
+### 通过 cli 指令调用
 
 ```bash
 # 输出基本信息
@@ -45,6 +45,17 @@ uitype compile --root 项目目录 --outFile 类型文件输出地址
 
 # 编译 指定的包
 uitype compile --root 项目目录 --outFile 类型文件输出地址 --include A B C
+```
+
+### 代码调用
+
+```ts
+// 引入包
+import { compileProject } from "uitype/dist/compiler";
+// 编译项目
+compileProject("test/ui-project", {
+  outFile: "test/ui-project-dist/uitype.d.ts",
+});
 ```
 
 ## 代码实例
