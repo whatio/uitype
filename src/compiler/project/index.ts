@@ -1,2 +1,2 @@
-export { compileProject } from './compile-project';
+export { compileProject, tagTypeOf } from './compile';
 export * from './types';

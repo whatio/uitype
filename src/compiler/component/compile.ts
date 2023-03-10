@@ -1,28 +1,19 @@
 import { StrictComponentName, CodeSnippet } from "../snippet";
-import { tagTypeOf } from "../project/tag-type-of";
+import { tagTypeOf } from "../project";
 import type { Component, ComponentAttribute } from "./types";
 
 /**
  * @description 编译组件
  * @param {Component} component 组件
  * @param {((attribute: ComponentAttribute) => string | undefined)} getReference 获取属性类型引用地址
- * @param {string} [publishName] 组件发布名字
  * @return {*}  {CodeSnippet}
  */
 export function compileComponent(
   component: Component,
   getReference: (attribute: ComponentAttribute) => string | undefined,
-  publishName?: string
 ): CodeSnippet {
 
-  // 发布名称
-  const pname = publishName ?? component.publishName
-  if(pname === undefined) {
-    console.log('组件编译失败，发布名称为空！');
-    return '';
-  }
-
-  const { extention, attributes } = component;
+  const { extention, attributes, publishName } = component;
   const controllers: string[] = [];
   const transitions: string[] = [];
   const displayList: CodeSnippet[] = [];
@@ -60,12 +51,12 @@ export function compileComponent(
 
   // 导出空显示列表组件
   if (displayList.length === 0) {
-    return `type ${pname} = ${StrictComponentName}<${extention}, undefined, ${CtrlType}, ${TransType}>;`;
+    return [`type ${publishName} = ${StrictComponentName}<${extention}, undefined, ${CtrlType}, ${TransType}>;`];
   }
 
   // 导出完整组件类型
   const componentSnippet: CodeSnippet = [];
-  componentSnippet.push(`type ${pname} = ${StrictComponentName}<${extention}, {`);
+  componentSnippet.push(`type ${publishName} = ${StrictComponentName}<${extention}, {`);
   componentSnippet.push(displayList);
   componentSnippet.push(`}, ${CtrlType}, ${TransType}>;`);
   return componentSnippet;

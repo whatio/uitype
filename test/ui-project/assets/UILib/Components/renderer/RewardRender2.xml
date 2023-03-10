@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="90,90" extention="Button" designImage="ui://v8r15bdsek66a3tlnk" designImageOffsetX="-80" designImageOffsetY="-1116" designImageAlpha="0" designImageLayer="1">
   <controller name="button" pages="0,up,1,down" selected="0"/>
-  <controller name="conShowName" pages="0,false,1,true" selected="0"/>
+  <controller name="conShowName" pages="0,false,1,true" selected="1"/>
   <controller name="conExtra" pages="0,false,1,true" selected="0"/>
   <controller name="conDouble" pages="0,false,1,true" selected="0"/>
   <controller name="conChip" pages="0,false,1,true" selected="0"/>
@@ -59,15 +59,15 @@
       <relation target="" sidePair="width-width,height-height"/>
     </image>
     <loader id="n24_d434" name="heroLinesQuality" xy="-9,55" size="78,44" scale="0.7,0.7" touchable="false" url="ui://v8r15bdsd434a3tloj" autoSize="true"/>
-    <text id="n4_bqe8" name="txtCount" xy="45,54" pivot="1,0" size="42,35" fontSize="25" color="#ffffff" align="right" vAlign="middle" ubb="true" strokeColor="#0e0700" strokeSize="2" singleLine="true" text="999">
+    <text id="n4_bqe8" name="txtCount" xy="44,54" pivot="1,0" size="43,35" fontSize="25" color="#ffffff" align="right" vAlign="middle" ubb="true" strokeColor="#0e0700" strokeSize="2" singleLine="true" text="999">
       <relation target="" sidePair="right-right,bottom-bottom"/>
     </text>
-    <text id="n8_nuar" name="txtName" xy="-4,84" size="91,31" fontSize="22" color="#e9e1ce" align="center" vAlign="middle" ubb="true" text="物品名称">
+    <text id="n8_nuar" name="txtName" xy="0,97" size="92,32" fontSize="22" color="#e9e1ce" align="center" vAlign="middle" ubb="true" strokeColor="#0e0700" text="物品名称">
       <gearDisplay controller="conShowName" pages="1"/>
       <gearXY controller="conShowName" pages="0,1" values="-4,84|0,97"/>
       <relation target="" sidePair="center-center"/>
     </text>
-    <text id="n20_q32w" name="txtLv" xy="42,59" pivot="1,0" size="45,29" fontSize="20" color="#ffffff" align="right" vAlign="middle" ubb="true" strokeColor="#0e0700" singleLine="true" text="Lv11">
+    <text id="n20_q32w" name="txtLv" xy="42,59" pivot="1,0" size="44,29" fontSize="20" color="#ffffff" align="right" vAlign="middle" ubb="true" strokeColor="#0e0700" singleLine="true" text="Lv11">
       <gearXY controller="isGodSoldier" pages="0,1" values="42,59|4,3"/>
       <relation target="" sidePair="right-right,top-top"/>
     </text>

@@ -1,14 +1,17 @@
 import { Config, loadConfig } from "../loader";
-import { legally_name_reg, sys_name_reg } from "../utils";
-import { tagTypeOf } from "../project/tag-type-of";
+import { componentIdToName, legally_name_reg, sys_name_reg } from "../utils";
+import { tagTypeOf } from "../project";
 import type { Component, ComponentAttribute } from "./types";
+import { basename } from "path";
 
 /**
  * @description 加载组件
+ * - 当组件名称不合法时，会根据id来生成组件发布名
+ * @param {string} id 组件id
  * @param {string} configFile 组件配置地址
  * @return {*}  {(Component | string | undefined)}
  */
-export function loadComponent(configFile: string): Component | string | undefined {
+export function loadComponent(id: string, configFile: string): Component | string | undefined {
   const config = loadConfig(configFile)?.elements?.find(e => e.name === 'component');
   if(!config) {
     console.log('[加载组件配置失败!]');
@@ -46,8 +49,13 @@ export function loadComponent(configFile: string): Component | string | undefine
   if(attributes.length === 0) {
     return extention;
   }
-  const component: Component = { extention, attributes};
-  return component;
+
+  // 发布名
+  let publishName = basename(configFile, ".xml");
+  if (legally_name_reg.test(publishName) === false) {
+    publishName = componentIdToName(id);
+  }
+  return { id, publishName, extention, attributes };
 }
 
 /**

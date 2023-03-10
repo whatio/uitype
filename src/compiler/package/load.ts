@@ -1,8 +1,8 @@
 import { basename, join } from 'path';
 import { existsSync, readdirSync } from 'fs';
-import { componentIdToName, pckageIdToName, legally_name_reg } from '../utils';
+import { pckageIdToName, legally_name_reg } from '../utils';
 import { loadConfig } from '../loader';
-import { tagTypeOf } from '../project/tag-type-of';
+import { tagTypeOf } from '../project';
 import { loadComponent, type Component, type ComponentProfile } from '../component';
 import type { Package } from './types';
 
@@ -61,7 +61,7 @@ export function loadPackage(packagePath: string): Package | undefined {
     
     // 加载组件
     const componentFile = join(packagePath, profile.path, profile.name);
-    const component = loadComponent(componentFile);
+    const component = loadComponent(profile.id, componentFile);
     if(!component) {
       return;
     }
@@ -74,16 +74,13 @@ export function loadPackage(packagePath: string): Package | undefined {
 
     // 设置组件包内引用路径
     const internalPkg = profile.path.replace(/^[\\\/]+|[\\\/]+$/g, "").replace(/[\\\/]+/g, ".");
-    component.internalPackage = internalPkg;
-    // 设置组件发布名
-    let cname = basename(profile.name, ".xml");
-    if (legally_name_reg.test(cname) === false) {
-      cname = componentIdToName(profile.id);
+    // 设置组件引用地址路径
+    if(internalPkg.length > 0) {
+      referenceMap.set(profile.id, `${name}.${internalPkg}.${component.publishName}`);
     }
-    component.publishName = cname;
-    // 完整的包引用地址路径
-    const fullPkg = internalPkg.length > 0 ? `${name}.${internalPkg}.${cname}`: `${name}.${cname}`;
-    referenceMap.set(profile.id, fullPkg);
+    else {
+      referenceMap.set(profile.id, `${name}.${component.publishName}`);
+    }
 
     let list = componentListMap.get(internalPkg);
     if(list === undefined) {
@@ -92,7 +89,6 @@ export function loadPackage(packagePath: string): Package | undefined {
     }
     list.push(component);
   });
-
   return { id, name, aliasName, referenceMap, componentListMap };
 }
 
@@ -103,11 +99,11 @@ export function loadPackage(packagePath: string): Package | undefined {
  * @param {string[]} [exclude] 如果设置此参数，则不加载被指定的包
  * @return {*}  {(Map<string, Package> | undefined)}
  */
-export function loadPackageList(packageRoot: string, include?: string[], exclude?: string[]): Package[] | undefined {
+export function loadPackageList(packageRoot: string, include?: string[], exclude?: string[]): Package[] {
   // 检查资源目录
   if(existsSync(packageRoot) === false) {
-    console.log('找不到项目资源目录！ assetsPath: ' + packageRoot);
-    return undefined;
+    console.log('找不到项目资源目录！ packageRoot: ' + packageRoot);
+    return [];
   }
 
   // 组件包文件夹列表

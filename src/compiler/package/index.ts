@@ -1,3 +1,3 @@
 export * from './types';
-export { loadPackage } from './load';
+export { loadPackage, loadPackageList } from './load';
 export { compilePackage } from './compile';

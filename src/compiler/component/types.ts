@@ -30,10 +30,10 @@ export interface ComponentAttribute {
  * @description 组件
  */
 export interface Component {
-  // 组件包内引用路径
-  internalPackage?: string;
+  // 组件id
+  readonly id: string;
   // 发布名字
-  publishName?: string;
+  readonly publishName: string;
   // 内置扩展类型
   readonly extention: string;
   // 组件内属性列表

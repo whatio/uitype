@@ -1,34 +1,56 @@
+import { existsSync, readdirSync } from "fs";
 import { join } from "path";
 import { emit } from "../emit";
+import { compilePackage, loadPackage, type Package } from "../package";
 import { CodeSnippet, StrictComponentSnippet, toCode } from "../snippet";
-import { compilePackage } from "./compile-package";
-import { loadPackageList } from "./load-package";
-import { loadProjectConfig } from "./load-project-config";
-import type { CompilerOptions, Package } from "./types";
+import { loadProjectConfig } from "./config";
+import type { CompilerOptions } from "./types";
 
+// 获取标签对应的内置组件类型
+export let tagTypeOf: (tag: string) => string = tag => tag;
 
+/**
+ * @description 编译项目
+ * @param {string} projectRoot 项目根目录
+ * @param {CompilerOptions} [options] 编译选项
+ * @return {*}  {CodeSnippet}
+ */
 export function compileProject(projectRoot: string, options?: CompilerOptions): CodeSnippet{
+
   // 加载项目配置
   const config = loadProjectConfig(projectRoot);
   if(config === undefined) {
     return '';
   }
+  const { compilerOptions, tagMapping } = config;
+
+  // 内置组件类型转换
+  tagTypeOf = tag => tagMapping[tag] ?? tag;
 
   // 处理编译选项
-  options = options ? {
-    ...config.compilerOptions,
+  options = options === undefined ? compilerOptions : {
+    ...compilerOptions,
     ...options
-  } : config.compilerOptions;
+  };
 
   // 加载组件包
   const { publishName, assetsName, outFile, include, exclude } = options;
   const assetsPath = join(projectRoot, assetsName ?? 'assets');
-  const packages = loadPackageList(assetsPath, include, exclude);
-  if(packages === undefined) {
-    return '';
+  if(existsSync(assetsPath) === false) {
+    console.log('找不到项目资源目录！ assetsPath: ' + assetsPath);
+    return [];
+  }
+  let packageDirs = readdirSync(assetsPath);
+  if(include?.length) {
+    packageDirs = packageDirs.filter(dir => include.includes(dir));
+  }
+  if(exclude?.length) {
+    packageDirs = packageDirs.filter(dir => exclude.includes(dir) === false)
   }
 
-  // 编译组件包
+  const packages = packageDirs
+    .map(dir => loadPackage(join(assetsPath, dir)))
+    .filter(pkg => pkg !== undefined) as Package[];
   const packageMap = new Map<string, Package>();
   packages.forEach(pkg => packageMap.set(pkg.id, pkg));
   const _getReference: Parameters<typeof compilePackage>[1] = (attribute) => {
@@ -38,14 +60,15 @@ export function compileProject(projectRoot: string, options?: CompilerOptions): 
     }
     return packageMap.get(pkg)?.referenceMap.get(src);
   };
-  const packageSnippets = packages.map(pkg => compilePackage(pkg, _getReference))
 
+  // 编译组件包
+  const packageSnippets = packages.map(pkg => compilePackage(pkg, _getReference)).flat();
 
   // 项目代码片段
   const projectSnippet: CodeSnippet = [];
   projectSnippet.push(`import * as fairygui from 'fairygui-cc';`);
   projectSnippet.push(...HeaderCommentSnippet);
-  projectSnippet.push(`declare namespace ${publishName} {`);
+  projectSnippet.push(`declare namespace ${publishName ?? 'uit'} {`);
   
   // 严格组件类型代码片段
   projectSnippet.push(StrictComponentSnippet);

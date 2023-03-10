@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="80,80" extention="Button" designImageOffsetX="-247" designImageOffsetY="-678" designImageAlpha="0" designImageLayer="1">
   <controller name="button" pages="0,up,1,down" selected="0"/>
-  <controller name="conShowName" pages="0,false,1,true" selected="0"/>
+  <controller name="conShowName" pages="0,false,1,true" selected="1"/>
   <controller name="conExtra" pages="0,false,1,true" selected="0"/>
   <controller name="conDouble" pages="0,false,1,true" selected="0"/>
   <controller name="conChip" pages="0,false,1,true" selected="0"/>
@@ -63,7 +63,7 @@
     <text id="n4_bqe8" name="txtCount" xy="39,49" pivot="1,0" size="37,32" fontSize="22" color="#ffffff" align="right" vAlign="middle" ubb="true" strokeColor="#0e0700" strokeSize="2" singleLine="true" text="999">
       <relation target="" sidePair="right-right,bottom-bottom"/>
     </text>
-    <text id="n8_nuar" name="txtName" xy="-9,84" size="92,32" fontSize="22" color="#e9e1ce" align="center" vAlign="middle" ubb="true" text="物品名称">
+    <text id="n8_nuar" name="txtName" xy="-5,86" size="92,32" fontSize="22" color="#e9e1ce" align="center" vAlign="middle" ubb="true" strokeColor="#0e0700" text="物品名称">
       <gearDisplay controller="conShowName" pages="1"/>
       <gearXY controller="conShowName" pages="0,1" values="-9,84|-5,86"/>
       <relation target="" sidePair="center-center"/>

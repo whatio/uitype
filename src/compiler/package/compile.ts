@@ -13,6 +13,11 @@ export function compilePackage(
   getReference: (attribute: ComponentAttribute) => string | undefined
 ): CodeSnippet {
 
+  // 组件包内不包含可以导出的组件 
+  if(componentListMap.size === 0) {
+    return '';
+  }
+
   // 获取组件类型引用地址
   const _getReference: typeof getReference = (attribute) => {
     const { pkg, src } = attribute;
@@ -30,17 +35,23 @@ export function compilePackage(
     `import ${aliasName} = ${name};`,
     `namespace ${name} {`
   ];
-  componentListMap.forEach((list, internalPkg) => {
-    const listSnippets = list.map(cmpt => compileComponent(cmpt, _getReference));
+
+  // 先排序再编译
+  const sortedEntries = [...componentListMap.entries()]
+    .sort(([a], [b]) => a.length > b.length ? 1 : -1);
+  sortedEntries.forEach(([internalPkg, list]) => {
+    const listSnippets = list.map(cmpt => compileComponent(cmpt, _getReference)).flat();
     if(internalPkg.length === 0) {
       packageSnippets.push(listSnippets);
       return;
     }
-
-    packageSnippets.push(`namespace ${internalPkg} {`);
-    packageSnippets.push(listSnippets);
-    packageSnippets.push('}')
+    packageSnippets.push([
+      `namespace ${internalPkg} {`,
+      listSnippets,
+      '}'
+    ]);
   });
+
   packageSnippets.push('}')
   return packageSnippets;
 }

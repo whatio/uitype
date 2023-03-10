@@ -3,7 +3,6 @@
   <resources>
     <component id="gjaia3tkx8" name="BtnEmpty.xml" path="/Components/btn/" exported="true"/>
     <component id="bqe80" name="RewardRender1.xml" path="/Components/renderer/" exported="true"/>
-    <component id="wuq3k" name="RadioBtn2.xml" path="/Components/btn/" exported="true"/>
     <component id="wuq3m" name="BtnClose.xml" path="/Components/btn/" exported="true"/>
     <component id="g0rn1j" name="BtnAdd.xml" path="/Components/btn/" exported="true"/>
     <image id="cxl0a3tl0p" name="img_icon_100.png" path="/Images/newimage/" exported="true"/>
@@ -37,8 +36,6 @@
     <component id="rgfha3tl53" name="Button_Check1.xml" path="/Components/button_checkbox/" exported="true"/>
     <image id="f7q5a3tl57" name="img_arrow2.png" path="/Images/arrow/" exported="true"/>
     <component id="f7q5a3tl5d" name="BtnArrows1.xml" path="/Components/btnArrows/" exported="true"/>
-    <image id="azb6a3tl83" name="img_singleBtn_up.png" path="/Images/button/" exported="true" scale="9grid" scale9grid="23,11,66,18"/>
-    <image id="azb6a3tl84" name="img_singleBtn_down.png" path="/Images/button/" exported="true" scale="9grid" scale9grid="28,11,56,22"/>
     <image id="azb6a3tl86" name="img_taskRewardBg.png" path="/Images/newimage/" exported="true" scale="9grid" scale9grid="16,15,32,30"/>
     <image id="zki2a3tl88" name="btn_tanhao01.png" path="/Images/newimage/" exported="true"/>
     <component id="zki2a3tl89" name="BtnTip.xml" path="/Components/btn/" exported="true"/>
@@ -112,8 +109,6 @@
     <component id="s92ja3tlba" name="ProgressBarGreen.xml" path="/Components/proBar/" exported="true"/>
     <image id="s92ja3tlbb" name="img_proBar_green.png" path="/Images/newimage/" exported="true" scale="9grid" scale9grid="6,4,46,8"/>
     <image id="xug1a3tlbc" name="img_comCloseTipText.png" path="/Images/newimage/" exported="true"/>
-    <image id="ehy5a3tlbd" name="img_rightBtn_common.png" path="/Images/button/" exported="true" scale="9grid" scale9grid="13,13,26,22"/>
-    <component id="ehy5a3tlbe" name="BtnCommonRight.xml" path="/Components/btn/" exported="true"/>
     <image id="tgcja3tlbf" name="img_extra.png" path="/Images/newimage/" exported="true"/>
     <component id="ihdqa3tlbg" name="Button_Check2.xml" path="/Components/button_checkbox/" exported="true"/>
     <image id="ihdqa3tlbh" name="img_select1.png" path="/Images/checkbox/" exported="true"/>
@@ -145,9 +140,9 @@
     <image id="mdi4p" name="img_task_type3.png" path="/Images/newimage/" exported="true"/>
     <image id="q6era3tlca" name="img_task_finish1.png" path="/Images/finished/" exported="true"/>
     <image id="q6era3tlcb" name="img_task_finish2.png" path="/Images/finished/" exported="true"/>
-    <image id="cjrfa3tlcc" name="img_expeditionLine_3.png" path="/Images/newimage/" exported="true" scale="9grid" scale9grid="18,4,72,3"/>
-    <image id="cjrfa3tlcd" name="img_expeditionLine_2.png" path="/Images/newimage/" exported="true" scale="9grid" scale9grid="29,3,58,3"/>
-    <image id="cjrfa3tlce" name="img_expeditionLine_1.png" path="/Images/newimage/" exported="true" scale="9grid" scale9grid="29,3,58,3"/>
+    <image id="cjrfa3tlcc" name="img_expeditionLine_3.png" path="/Images/newimage/" exported="true" scale9grid="18,4,72,3"/>
+    <image id="cjrfa3tlcd" name="img_expeditionLine_2.png" path="/Images/newimage/" exported="true" scale9grid="29,3,58,3"/>
+    <image id="cjrfa3tlce" name="img_expeditionLine_1.png" path="/Images/newimage/" exported="true" scale9grid="29,3,58,2"/>
     <image id="gquba3tlch" name="img_new_second_closeBtn.png" path="/Images/button/" exported="true"/>
     <component id="tedua3tlcg" name="BtnWindowClose.xml" path="/Components/btn/" exported="true"/>
     <image id="tedua3tlch" name="img_window_close.png" path="/Images/newimage/" exported="true"/>
@@ -199,7 +194,6 @@
     <component id="v5p1a3tlgy" name="012.三级弹窗一级标题 28号.xml" path="/Components/fontTab/" exported="true"/>
     <component id="v5p1a3tlgz" name="013.三级弹窗二级标题 22号.xml" path="/Components/fontTab/" exported="true"/>
     <component id="v5p1a3tlh0" name="015-3.界面通用浅色字体 22号.xml" path="/Components/fontTab/" exported="true"/>
-    <component id="v5p1a3tlh2" name="004.菜单界面一级标题 26号.xml" path="/Components/fontTab/" exported="true"/>
     <component id="v5p1a3tlh3" name="005-5.界面通用深色字体 24号.xml" path="/Components/fontTab/" exported="true"/>
     <component id="v5p1a3tlh4" name="001.二级弹窗一级标题 28号.xml" path="/Components/fontTab/" exported="true"/>
     <component id="v5p1a3tlh5" name="002.二级弹窗二级标题 22号.xml" path="/Components/fontTab/" exported="true"/>
@@ -211,16 +205,11 @@
     <component id="f73xa3tlhd" name="015-4.界面通用浅色字体 24号.xml" path="/Components/fontTab/" exported="true"/>
     <component id="f73xa3tlhe" name="015-2.界面通用浅色字体 20号.xml" path="/Components/fontTab/" exported="true"/>
     <component id="f73xa3tlhf" name="015-1.界面通用浅色字体 18号.xml" path="/Components/fontTab/" exported="true"/>
-    <component id="f73xa3tlhg" name="006-3.亮色面板通用置灰 22号.xml" path="/Components/fontTab/" exported="true"/>
-    <component id="f73xa3tlhh" name="006-4.亮色面板通用置灰 24号.xml" path="/Components/fontTab/" exported="true"/>
-    <component id="f73xa3tlhi" name="006-2.亮色面板通用置灰 20号.xml" path="/Components/fontTab/" exported="true"/>
     <component id="f73xa3tlhj" name="006-1.亮色面板通用置灰 18号.xml" path="/Components/fontTab/" exported="true"/>
     <component id="f73xa3tlhm" name="003-1.界面通用其他字体 22号 加粗.xml" path="/Components/fontTab/" exported="true"/>
     <component id="f73xa3tlhq" name="009-1.亮色面板通用绿色 20号.xml" path="/Components/fontTab/" exported="true"/>
     <component id="f73xa3tlhs" name="014.三级弹窗其他标题 22号.xml" path="/Components/fontTab/" exported="true"/>
     <component id="f73xa3tlht" name="016.暗色面板其他字体 22号.xml" path="/Components/fontTab/" exported="true"/>
-    <component id="f73xa3tlhu" name="017-1.暗色面板通用置灰 20号.xml" path="/Components/fontTab/" exported="true"/>
-    <component id="f73xa3tlhv" name="017-2.暗色面板通用置灰 22号.xml" path="/Components/fontTab/" exported="true"/>
     <component id="f73xa3tlhx" name="018-2.暗色面板通用绿色 22号.xml" path="/Components/fontTab/" exported="true"/>
     <component id="f73xa3tlhy" name="018-1.暗色面板通用绿色 20号.xml" path="/Components/fontTab/" exported="true"/>
     <component id="f73xa3tlhz" name="019-1.暗色面板通用红色 22号.xml" path="/Components/fontTab/" exported="true"/>
@@ -269,7 +258,6 @@
     <component id="kyk1a3tljp" name="022-4.通用亮色面板品质色文字 24号 加粗(代码改品质色).xml" path="/Components/fontTab/" exported="true"/>
     <component id="kyk1a3tljq" name="022-2.通用亮色面板品质色文字 20号 加粗(代码改品质色).xml" path="/Components/fontTab/" exported="true"/>
     <component id="kyk1a3tljr" name="024.暗色面板说明文字 20号.xml" path="/Components/fontTab/" exported="true"/>
-    <component id="kyk1a3tljs" name="023-1.通用暗色面板品质色文字 18号 1描边(代码改品质色).xml" path="/Components/fontTab/" exported="true"/>
     <component id="kyk1a3tljt" name="023-2.通用暗色面板品质色文字 20号 1描边(代码改品质色).xml" path="/Components/fontTab/" exported="true"/>
     <component id="kyk1a3tlju" name="023-3.通用暗色面板品质色文字 22号 1描边(代码改品质色).xml" path="/Components/fontTab/" exported="true"/>
     <component id="kyk1a3tljv" name="023-4.通用暗色面板品质色文字 24号 1描边(代码改品质色).xml" path="/Components/fontTab/" exported="true"/>
@@ -284,11 +272,7 @@
     <component id="dldaa3tlkg" name="025-2.通用奖励数量 20号 1描边.xml" path="/Components/fontTab/" exported="true"/>
     <component id="tr9ia3tlku" name="005-6.界面通用深色字体 26号.xml" path="/Components/fontTab/" exported="true"/>
     <component id="tr9ia3tlkw" name="015-7.界面通用浅色字体 26号.xml" path="/Components/fontTab/" exported="true"/>
-    <component id="jyc6a3tlky" name="009-3.亮色面板通用绿色 24号.xml" path="/Components/fontTab/" exported="true"/>
     <component id="jyc6a3tlkz" name="009-4.亮色面板通用绿色 26号.xml" path="/Components/fontTab/" exported="true"/>
-    <component id="9i4xa3tll0" name="006-5.亮色面板通用置灰 18号 加粗.xml" path="/Components/fontTab/" exported="true"/>
-    <component id="9i4xa3tll1" name="006-6.亮色面板通用置灰 20号 加粗.xml" path="/Components/fontTab/" exported="true"/>
-    <component id="9i4xa3tll2" name="006-7.亮色面板通用置灰 22号 加粗.xml" path="/Components/fontTab/" exported="true"/>
     <component id="9i4xa3tll3" name="006-8.亮色面板通用置灰 24号 加粗.xml" path="/Components/fontTab/" exported="true"/>
     <component id="9i4xa3tll4" name="005-7.界面通用深色字体 26号 加粗.xml" path="/Components/fontTab/" exported="true"/>
     <component id="dkjpa3tll8" name="009-5.亮色面板通用绿色 22号 加粗.xml" path="/Components/fontTab/" exported="true"/>
@@ -641,6 +625,24 @@
     <image id="h8v71no8u7i" name="img_getway_btn3.png" path="/Images/newimage/" exported="true"/>
     <component id="h3kc1no8u7k" name="BtnArrows5.xml" path="/Components/btnArrows/" exported="true"/>
     <image id="h3kc1no8u7l" name="img_jt.png" path="/Images/arrow/" exported="true"/>
+    <component id="lrlo1no8u7m" name="通用品质1-22-描边.xml" path="/Components/fontTab_text/" exported="true"/>
+    <component id="lrlo1no8u7n" name="通用品质1-24-描边.xml" path="/Components/fontTab_text/" exported="true"/>
+    <component id="lrlo1no8u7o" name="通用品质1-28-描边.xml" path="/Components/fontTab_text/" exported="true"/>
+    <component id="fdx41no8u7p" name="通用品质1-22-描边.xml" path="/Components/fontTab_richText/"/>
+    <component id="fdx41no8u7q" name="通用品质1-24-描边.xml" path="/Components/fontTab_richText/"/>
+    <component id="fdx41no8u7r" name="通用品质1-28-描边.xml" path="/Components/fontTab_richText/"/>
+    <component id="fdx41no8u7s" name="通用红色1-20.xml" path="/Components/fontTab_richText/"/>
+    <component id="fdx41no8u7t" name="通用红色1-24.xml" path="/Components/fontTab_richText/"/>
+    <component id="fdx41no8u7u" name="通用红色1-26.xml" path="/Components/fontTab_richText/"/>
+    <component id="fdx41no8u7v" name="通用红色1-20.xml" path="/Components/fontTab_text/"/>
+    <component id="fdx41no8u7w" name="通用红色1-24.xml" path="/Components/fontTab_text/"/>
+    <component id="fdx41no8u7x" name="通用红色1-26.xml" path="/Components/fontTab_text/"/>
+    <image id="fdx41no8u7y" name="img_task_finish21.png" path="/Images/finished/"/>
+    <image id="lqy01no8u7z" name="img_expeditionLine1_1.png" path="/Images/newimage/" exported="true" scale="9grid" scale9grid="29,2,58,4"/>
+    <image id="lqy01no8u80" name="img_expeditionLine1_2.png" path="/Images/newimage/" exported="true" scale="9grid" scale9grid="29,2,58,4"/>
+    <image id="lqy01no8u81" name="img_expeditionLine1_3.png" path="/Images/newimage/" exported="true" scale="9grid" scale9grid="29,2,58,4"/>
+    <component id="uoh11no8u7z" name="RewardRenderForEffect3.xml" path="/Components/renderer/" exported="true"/>
+    <component id="omga1no8u82" name="TestWindow.xml" path="/" exported="true"/>
   </resources>
   <publish name="UILib"/>
 </packageDescription>

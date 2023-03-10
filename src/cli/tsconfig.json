@@ -1,11 +1,10 @@
 {
   "extends": "../tsconfig-base.json",
   "compilerOptions": {
-    "types": ["node"],
-    "resolveJsonModule": true
+    "types": ["node"]
   },
   "references": [
     {"path": "../compiler"}
   ],
-  "include": ["**/*.ts", "**/*.json"]
+  "include": ["**/*.ts"]
 }

@@ -30,997 +30,1001 @@ declare namespace uit {
 	  Transition extends string | undefined = undefined
 	> = StrictGetChild<StrictGetController<StrictGetTransition<Component, Transition>, Controller>, DisplayList>;
 	// ==================================== strict ======================================
-		import __pkg__v8r15bds = UILib;
-		namespace UILib {
-		namespace Components.btn {
-			type BtnEmpty = StrictComponent<Button, undefined, 'button', undefined>;
-				type RadioBtn2 = StrictComponent<Button, {
-					readonly redPoint: image;
-					readonly title: text;
-				}, 'button' | 'conIsCanRed', undefined>;
-			type BtnClose = StrictComponent<Button, undefined, 'button', undefined>;
-				type BtnAdd = StrictComponent<Button, {
-					readonly icon: loader;
-				}, 'button' | 'conIsGray', undefined>;
-				type Btn6 = StrictComponent<Button, {
-					readonly title: richtext;
-					readonly icon: loader;
-				}, 'button' | 'conIsGray', undefined>;
-				type Btn7 = StrictComponent<Button, {
-					readonly title: richtext;
-					readonly icon: loader;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnCutDown = StrictComponent<Button, {
-					readonly icon: loader;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnBig1 = StrictComponent<Button, {
-					readonly icon: image;
-					readonly redPoint: image;
-					readonly title: richtext;
-				}, 'button' | 'conIsGray', undefined>;
-			type BtnSearch = StrictComponent<Button, undefined, 'button', undefined>;
-				type BtnCommonRight = StrictComponent<Button, {
-					readonly icon: loader;
-				}, 'button' | 'conIsGray', undefined>;
-			type BtnWindowClose = StrictComponent<Button, undefined, 'button', undefined>;
-				type Btn3 = StrictComponent<Button, {
-					readonly redPoint: image;
-					readonly title: richtext;
-				}, 'button', undefined>;
-				type BtnSmall1 = StrictComponent<Button, {
-					readonly icon: image;
-					readonly redPoint: image;
-					readonly title: richtext;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnSmall2 = StrictComponent<Button, {
-					readonly icon: image;
-					readonly redPoint: image;
-					readonly title: richtext;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnSmall3 = StrictComponent<Button, {
-					readonly icon: image;
-					readonly redPoint: image;
-					readonly title: richtext;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnSmall4 = StrictComponent<Button, {
-					readonly icon: image;
-					readonly redPoint: image;
-					readonly title: richtext;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnSmall5 = StrictComponent<Button, {
-					readonly icon: image;
-					readonly redPoint: image;
-					readonly title: richtext;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnBig2 = StrictComponent<Button, {
-					readonly icon: image;
-					readonly redPoint: image;
-					readonly title: richtext;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnBig3 = StrictComponent<Button, {
-					readonly icon: image;
-					readonly redPoint: image;
-					readonly title: richtext;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnBig4 = StrictComponent<Button, {
-					readonly icon: image;
-					readonly redPoint: image;
-					readonly title: richtext;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnBig5 = StrictComponent<Button, {
-					readonly icon: image;
-					readonly redPoint: image;
-					readonly title: richtext;
-				}, 'button' | 'conIsGray', undefined>;
-			type BtnClose1 = StrictComponent<Button, undefined, 'button', undefined>;
-				type BtnSmall6 = StrictComponent<Button, {
-					readonly bg: image;
-					readonly redPoint: image;
-					readonly icon: loader;
-					readonly title: richtext;
-				}, 'button' | 'conIsGray', undefined>;
-			type BtnStar = StrictComponent<Button, undefined, 'button' | 'conHaveStar', undefined>;
-			type BtnClose2 = StrictComponent<Button, undefined, 'button', undefined>;
-			type BtnClose3 = StrictComponent<Button, undefined, 'button', undefined>;
-			type BtnWindowClose1 = StrictComponent<Button, undefined, 'button', undefined>;
-				type BtnIcon = StrictComponent<Button, {
-					readonly icon: loader;
-				}, 'button', undefined>;
-			type BtnClose5 = StrictComponent<Button, undefined, 'button', undefined>;
-		}
-		namespace Components.renderer {
-				type RewardRender1 = StrictComponent<Button, {
-					readonly iconQuality: loader;
-					readonly loaderTreasureQuality: loader;
-					readonly graphAniBg: graph;
-					readonly imgIcon: loader;
-					readonly loaderFrame: loader;
-					readonly loaderArmy: loader;
-					readonly graphAni: graph;
-					readonly loaderSpecial: loader;
-					readonly loaderTreasureLogo: loader;
-					readonly listTreasureStar: list;
-					readonly imgSel: image;
-					readonly heroLinesQuality: loader;
-					readonly txtCount: text;
-					readonly txtName: text;
-					readonly txtLv: text;
-				}, 'button' | 'conShowName' | 'conExtra' | 'conDouble' | 'conChip' | 'conArmy' | 'isGodSoldier' | 'isSpecial', undefined>;
-				type ItemCheckRender = StrictComponent<Button, {
-					readonly iconQuality: loader;
-					readonly imgIcon: loader;
-					readonly loaderFrame: loader;
-					readonly txtCount: text;
-					readonly txtName: UILib.Components.fontTab_richText.__cmpt__oeaia3tlp9;
-				}, 'button', undefined>;
-				type ConsumeRender = StrictComponent<Button, {
-					readonly imgBg: loader;
-					readonly btnItem: UILib.Components.renderer.ConsumeMask;
-					readonly title: richtext;
-				}, 'bgState', undefined>;
-				type HeroStarRender = StrictComponent<component, {
-					readonly loaderStar: loader;
-				}, 'conStarColor', undefined>;
-				type RewardRender2 = StrictComponent<Button, {
-					readonly iconQuality: loader;
-					readonly loaderTreasureQuality: loader;
-					readonly graphAniBg: graph;
-					readonly imgIcon: loader;
-					readonly loaderFrame: loader;
-					readonly loaderArmy: loader;
-					readonly graphAni: graph;
-					readonly loaderSpecial: loader;
-					readonly loaderTreasureLogo: loader;
-					readonly listTreasureStar: list;
-					readonly imgSel: image;
-					readonly heroLinesQuality: loader;
-					readonly txtCount: text;
-					readonly txtName: text;
-					readonly txtLv: text;
-				}, 'button' | 'conShowName' | 'conExtra' | 'conDouble' | 'conChip' | 'conArmy' | 'isGodSoldier' | 'isSpecial', undefined>;
-				type RewardRender3 = StrictComponent<Button, {
-					readonly iconQuality: loader;
-					readonly loaderTreasureQuality: loader;
-					readonly graphAniBg: graph;
-					readonly imgIcon: loader;
-					readonly loaderFrame: loader;
-					readonly loaderArmy: loader;
-					readonly graphAni: graph;
-					readonly loaderSpecial: loader;
-					readonly loaderTreasureLogo: loader;
-					readonly listTreasureStar: list;
-					readonly imgSel: image;
-					readonly heroLinesQuality: loader;
-					readonly txtCount: text;
-					readonly txtName: text;
-					readonly txtLv: text;
-				}, 'button' | 'conShowName' | 'conExtra' | 'conDouble' | 'conChip' | 'conArmy' | 'isGodSoldier' | 'isSpecial', undefined>;
-				type RewardRender4 = StrictComponent<Button, {
-					readonly iconQuality: loader;
-					readonly loaderTreasureQuality: loader;
-					readonly graphAniBg: graph;
-					readonly imgIcon: loader;
-					readonly loaderFrame: loader;
-					readonly loaderArmy: loader;
-					readonly graphAni: graph;
-					readonly loaderSpecial: loader;
-					readonly loaderTreasureLogo: loader;
-					readonly listTreasureStar: list;
-					readonly imgSel: image;
-					readonly heroLinesQuality: loader;
-					readonly txtCount: text;
-					readonly txtName: text;
-					readonly txtLv: text;
-				}, 'button' | 'conShowName' | 'conExtra' | 'conDouble' | 'conChip' | 'conArmy' | 'isGodSoldier' | 'isSpecial', undefined>;
-				type ConsumeMask = StrictComponent<Button, {
-					readonly loaderBg: loader;
-					readonly icon: loader;
-					readonly loaderFrame: loader;
-				}, 'button', undefined>;
-				type RewardRenderForEffect4 = StrictComponent<Button, {
-					readonly rewardRender: UILib.Components.renderer.RewardRender4;
-				}, 'button', undefined>;
-				type RewardRenderForEffect1 = StrictComponent<Button, {
-					readonly rewardRender: UILib.Components.renderer.RewardRender1;
-				}, 'button', undefined>;
-				type RewardRenderForEffect2 = StrictComponent<Button, {
-					readonly rewardRender: UILib.Components.renderer.RewardRender2;
-				}, 'button', undefined>;
-				type GetWayRender = StrictComponent<component, {
-					readonly loaderIcon: loader;
-					readonly btnGo: UILib.Components.btn.BtnIcon;
-					readonly listHero: list;
-					readonly txtName: UILib.Components.fontTab_richText.__cmpt__dr9ba3tlpw;
-					readonly txtTip: UILib.Components.fontTab_richText.__cmpt__dr9ba3tlpw;
-					readonly yyTxt: text;
-					readonly numTxt: text;
-				}, 'conShowHero' | 'conOpen' | 'conBtnIcon' | 'numCon', undefined>;
-		}
-		namespace Components.frame {
-				type Frame1 = StrictComponent<Button, {
-					readonly title: UILib.Components.fontTab_richText.__cmpt__i098a3tlpi;
-				}, undefined, undefined>;
-				type Frame4 = StrictComponent<Button, {
-					readonly close: UILib.Components.btn.BtnWindowClose1;
-					readonly title: UILib.Components.fontTab_richText.__cmpt__i098a3tlpi;
-				}, undefined, undefined>;
-				type Frame5 = StrictComponent<Button, {
-					readonly icon: loader;
-				}, 'conIsVisibleImg', undefined>;
-				type Frame6 = StrictComponent<Button, {
-					readonly title: UILib.Components.fontTab_richText.__cmpt__i098a3tlpi;
-				}, 'conShowTitle', undefined>;
-				type Frame7 = StrictComponent<Button, {
-					readonly close: UILib.Components.btn.BtnWindowClose;
-				}, undefined, undefined>;
-		}
-		namespace Components.button_checkbox {
-			type Button_Check1 = StrictComponent<Button, undefined, 'button', undefined>;
-			type Button_Check2 = StrictComponent<Button, undefined, 'button', undefined>;
-				type Button_Check3 = StrictComponent<Button, {
-					readonly title: richtext;
-				}, 'button', undefined>;
-			type Button_Check4 = StrictComponent<Button, undefined, 'button', undefined>;
-				type Button_Check5 = StrictComponent<Button, {
-					readonly title: richtext;
-				}, 'button', undefined>;
-		}
-		namespace Components.btnArrows {
-				type BtnArrows1 = StrictComponent<Button, {
-					readonly icon: loader;
-				}, 'button', undefined>;
-			type BtnArrows2 = StrictComponent<Button, undefined, 'button', undefined>;
-			type BtnArrows3 = StrictComponent<Button, undefined, 'button', undefined>;
-			type BtnArrows4 = StrictComponent<Button, undefined, 'button', undefined>;
-				type BtnArrows5 = StrictComponent<Button, {
-					readonly redPoint1: image;
-				}, 'isRed', undefined>;
-		}
-		namespace Components.proBar {
-				type ProgressBarAffair = StrictComponent<ProgressBar, {
-					readonly bar: image;
-				}, undefined, undefined>;
-				type ProgressBarGreen = StrictComponent<ProgressBar, {
-					readonly bar: image;
-				}, undefined, undefined>;
-				type ProgressBarGreen1 = StrictComponent<ProgressBar, {
-					readonly bar: image;
-					readonly title: text;
-				}, undefined, undefined>;
-				type ProgressBarOrange = StrictComponent<ProgressBar, {
-					readonly bar: image;
-					readonly title: text;
-				}, undefined, undefined>;
-				type ProgressBarRed = StrictComponent<ProgressBar, {
-					readonly bar: image;
-					readonly title: text;
-				}, undefined, undefined>;
-				type ProgressBarYellow = StrictComponent<ProgressBar, {
-					readonly bar: image;
-					readonly title: text;
-				}, undefined, undefined>;
-				type ProgressBarBlue = StrictComponent<ProgressBar, {
-					readonly bar: image;
-					readonly title: UILib.Components.fontTab_richText.__cmpt__i098a3tlph;
-				}, undefined, undefined>;
-				type ProgressBarBlue1 = StrictComponent<ProgressBar, {
-					readonly bar: image;
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type ProgressBarYellow1 = StrictComponent<ProgressBar, {
-					readonly bar: image;
-				}, undefined, undefined>;
-				type ProgressBarYellow2 = StrictComponent<ProgressBar, {
-					readonly bar: image;
-				}, undefined, undefined>;
-				type ProgressBar1 = StrictComponent<ProgressBar, {
-					readonly bar: image;
-				}, undefined, undefined>;
-		}
+	import __pkg__v8r15bds = UILib;
+	namespace UILib {
+		type TestWindow = StrictComponent<fairygui.GComponent, {
+			readonly btnAdd: UILib.Components.btn.BtnBig1;
+			readonly btnOk: UILib.Components.btn.BtnBig1;
+			readonly troopList: fairygui.GList;
+			readonly txtSelect: UILib.Components.fontTab_richText.__cmpt__oeaia3tlp9;
+			readonly TxtConsume2: fairygui.GRichTextField;
+			readonly TxtConsume1: fairygui.GRichTextField;
+		}, undefined, undefined>;
 		namespace Components {
-				type TroopFightSelectCom = StrictComponent<component, {
-					readonly btnAdd: UILib.Components.btn.BtnBig1;
-					readonly btnOk: UILib.Components.btn.BtnBig1;
-					readonly troopList: list;
-					readonly txtSelect: UILib.Components.fontTab_richText.__cmpt__oeaia3tlp9;
-					readonly TxtConsume2: richtext;
-					readonly TxtConsume1: richtext;
-				}, 'conIsShowConsume', undefined>;
-				type CircleMaskProgressCom = StrictComponent<component, {
-					readonly maskGraph: graph;
-				}, undefined, undefined>;
-				type GetWayCom = StrictComponent<component, {
-					readonly listGetWay: list;
-				}, undefined, undefined>;
-				type QualityDarkCom = StrictComponent<component, {
-					readonly loaderBg: loader;
-				}, undefined, undefined>;
-				type QualityLightCom = StrictComponent<component, {
-					readonly loaderBg: loader;
-				}, undefined, undefined>;
-				type CommonDarkDesCom = StrictComponent<Button, {
-					readonly icon: loader;
-					readonly title: UILib.Components.fontTab.__cmpt__v5p1a3tlgz;
-					readonly txtDes: richtext;
-				}, undefined, undefined>;
+			type TroopFightSelectCom = StrictComponent<fairygui.GComponent, {
+				readonly btnAdd: UILib.Components.btn.BtnBig1;
+				readonly btnOk: UILib.Components.btn.BtnBig1;
+				readonly troopList: fairygui.GList;
+				readonly txtSelect: UILib.Components.fontTab_richText.__cmpt__oeaia3tlp9;
+				readonly TxtConsume2: fairygui.GRichTextField;
+				readonly TxtConsume1: fairygui.GRichTextField;
+			}, 'conIsShowConsume', undefined>;
+			type GetWayCom = StrictComponent<fairygui.GComponent, {
+				readonly listGetWay: fairygui.GList;
+			}, undefined, undefined>;
+			type QualityDarkCom = StrictComponent<fairygui.GComponent, {
+				readonly loaderBg: fairygui.GLoader;
+			}, undefined, undefined>;
+			type QualityLightCom = StrictComponent<fairygui.GComponent, {
+				readonly loaderBg: fairygui.GLoader;
+			}, undefined, undefined>;
+			type CommonDarkDesCom = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GLoader;
+				readonly title: UILib.Components.fontTab.__cmpt__v5p1a3tlgz;
+				readonly txtDes: fairygui.GRichTextField;
+			}, undefined, undefined>;
 		}
-		namespace Components.button_radio {
-				type Button_Radio1 = StrictComponent<Button, {
-					readonly redPoint: image;
-					readonly icon: loader;
-				}, 'button', undefined>;
-				type Button_Radio0 = StrictComponent<Button, {
-					readonly bgLoader: loader;
-					readonly icon: loader;
-					readonly title: text;
-					readonly redPoint: image;
-				}, 'button', undefined>;
-				type Button_Radio2 = StrictComponent<Button, {
-					readonly redPoint: image;
-					readonly title: richtext;
-				}, 'button', undefined>;
-				type Button_Radio3 = StrictComponent<Button, {
-					readonly icon: loader;
-					readonly redPoint: image;
-				}, 'button' | 'conIsRight' | 'conIsCanRed', undefined>;
-				type Button_Radio4 = StrictComponent<Button, {
-					readonly redPoint: image;
-					readonly title: text;
-				}, 'button', undefined>;
-		}
-		namespace Components.countryRender {
-				type CountryCityRender = StrictComponent<Button, {
-					readonly icon: loader;
-				}, undefined, undefined>;
-				type CountrySmallRender = StrictComponent<Button, {
-					readonly icon: loader;
-				}, undefined, undefined>;
-				type CountryFightSmallRender = StrictComponent<Button, {
-					readonly icon: loader;
-				}, undefined, undefined>;
-		}
-		namespace Components.silder {
-				type silder_com_3 = StrictComponent<Slider, {
-					readonly bg: image;
-					readonly bar: image;
-					readonly gripBg: image;
-					readonly grip1: UILib.Components.silder.silder_com_3_grip;
-					readonly grip: UILib.Components.btn.BtnEmpty;
-					readonly curNum: UILib.Components.fontTab_richText.__cmpt__oeaia3tlp9;
-				}, undefined, undefined>;
-			type silder_com_3_grip = StrictComponent<Button, undefined, 'button', undefined>;
-		}
-		namespace Components.fontTab {
-				type __cmpt__v5p1a3tlgy = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__v5p1a3tlgz = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__v5p1a3tlh0 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__v5p1a3tlh2 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__v5p1a3tlh3 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__v5p1a3tlh4 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__v5p1a3tlh5 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__v5p1a3tlh7 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__v5p1a3tlh8 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlha = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhb = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhc = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhd = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhe = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhf = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhg = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhh = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhi = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhj = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhm = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhq = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhs = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlht = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhu = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhv = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhx = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhy = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__f73xa3tlhz = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__kyk1a3tljh = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__kyk1a3tlji = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__kyk1a3tljj = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__kyk1a3tljk = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__kyk1a3tljl = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__kyk1a3tljm = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__kyk1a3tljn = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__kyk1a3tljo = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__kyk1a3tljp = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__kyk1a3tljq = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__kyk1a3tljr = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__kyk1a3tljs = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__kyk1a3tljt = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__kyk1a3tlju = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__kyk1a3tljv = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__e9fra3tlk5 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__e9fra3tlk6 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__e9fra3tlk7 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__e9fra3tlk8 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__dldaa3tlkf = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__dldaa3tlkg = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__tr9ia3tlku = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__tr9ia3tlkw = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__jyc6a3tlky = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__jyc6a3tlkz = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__9i4xa3tll0 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__9i4xa3tll1 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__9i4xa3tll2 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__9i4xa3tll3 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__9i4xa3tll4 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__dkjpa3tll8 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__cv0fa3tlld = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__oa3ga3tllk = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type GradientLabel = StrictComponent<Label, {
-					readonly txtContent: richtext;
-					readonly maskGraph: graph;
-				}, undefined, undefined>;
-				type __cmpt__gsraa3tlly = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__rq3da3tlmx = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__rq3da3tlmy = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-		}
-		namespace Components.btnSpecial {
-				type BtnRecharge = StrictComponent<Button, {
-					readonly icon: loader;
-				}, 'button', undefined>;
-				type BtnGet = StrictComponent<Button, {
-					readonly redPoint: image;
-					readonly icon: loader;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnBuy = StrictComponent<Button, {
-					readonly redPoint: image;
-					readonly title: text;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnGoToRecharge = StrictComponent<Button, {
-					readonly icon: loader;
-				}, 'button', undefined>;
-				type BtnBlue = StrictComponent<Button, {
-					readonly icon: loader;
-				}, 'button', undefined>;
-				type BtnOrang = StrictComponent<Button, {
-					readonly redPoint: image;
-					readonly icon: loader;
-				}, 'button' | 'conIsGray', undefined>;
+		namespace Components.btn {
+			type BtnEmpty = StrictComponent<fairygui.GButton, undefined, 'button', undefined>;
+			type BtnClose = StrictComponent<fairygui.GButton, undefined, 'button', undefined>;
+			type BtnAdd = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GLoader;
+			}, 'button' | 'conIsGray', undefined>;
+			type Btn6 = StrictComponent<fairygui.GButton, {
+				readonly title: fairygui.GRichTextField;
+				readonly icon: fairygui.GLoader;
+			}, 'button' | 'conIsGray', undefined>;
+			type Btn7 = StrictComponent<fairygui.GButton, {
+				readonly title: fairygui.GRichTextField;
+				readonly icon: fairygui.GLoader;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnCutDown = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GLoader;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnBig1 = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GImage;
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GRichTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnSearch = StrictComponent<fairygui.GButton, undefined, 'button', undefined>;
+			type BtnWindowClose = StrictComponent<fairygui.GButton, undefined, 'button', undefined>;
+			type Btn3 = StrictComponent<fairygui.GButton, {
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GRichTextField;
+			}, 'button', undefined>;
+			type BtnSmall1 = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GImage;
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GRichTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnSmall2 = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GImage;
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GRichTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnSmall3 = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GImage;
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GRichTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnSmall4 = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GImage;
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GRichTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnSmall5 = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GImage;
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GRichTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnBig2 = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GImage;
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GRichTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnBig3 = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GImage;
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GRichTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnBig4 = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GImage;
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GRichTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnBig5 = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GImage;
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GRichTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnClose1 = StrictComponent<fairygui.GButton, undefined, 'button', undefined>;
+			type BtnSmall6 = StrictComponent<fairygui.GButton, {
+				readonly bg: fairygui.GImage;
+				readonly redPoint: fairygui.GImage;
+				readonly icon: fairygui.GLoader;
+				readonly title: fairygui.GRichTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnStar = StrictComponent<fairygui.GButton, undefined, 'button' | 'conHaveStar', undefined>;
+			type BtnClose2 = StrictComponent<fairygui.GButton, undefined, 'button', undefined>;
+			type BtnClose3 = StrictComponent<fairygui.GButton, undefined, 'button', undefined>;
+			type BtnWindowClose1 = StrictComponent<fairygui.GButton, undefined, 'button', undefined>;
+			type BtnIcon = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GLoader;
+			}, 'button', undefined>;
+			type BtnClose5 = StrictComponent<fairygui.GButton, undefined, 'button', undefined>;
 		}
 		namespace Components.title {
-				type CommonTitleDark = StrictComponent<Button, {
-					readonly title: text;
-				}, 'button', undefined>;
-				type CommonTitleLight = StrictComponent<Button, {
-					readonly title: text;
-				}, 'button', undefined>;
-				type CommonTitleEstate = StrictComponent<Button, {
-					readonly title: text;
-				}, 'button', undefined>;
+			type CommonTitleDark = StrictComponent<fairygui.GButton, {
+				readonly title: fairygui.GTextField;
+			}, 'button', undefined>;
+			type CommonTitleLight = StrictComponent<fairygui.GButton, {
+				readonly title: fairygui.GTextField;
+			}, 'button', undefined>;
+			type CommonTitleEstate = StrictComponent<fairygui.GButton, {
+				readonly title: fairygui.GTextField;
+			}, 'button', undefined>;
 		}
-		namespace Components.fontTab_richText {
-				type __cmpt__oeaia3tlp6 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__oeaia3tlp8 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__oeaia3tlp9 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__oeaia3tlpa = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__oeaia3tlpb = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__oeaia3tlpc = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__oeaia3tlpd = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__oeaia3tlpe = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__oeaia3tlpf = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__oeaia3tlpg = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__i098a3tlph = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__i098a3tlpi = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__i098a3tlpj = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__i098a3tlpk = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__i098a3tlpl = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__s0zca3tlpo = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__s0zca3tlpp = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__dr9ba3tlpq = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__dr9ba3tlpr = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__dr9ba3tlps = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__dr9ba3tlpt = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__dr9ba3tlpu = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__dr9ba3tlpv = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__dr9ba3tlpw = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__dr9ba3tlpx = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__dr9ba3tlpy = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__dr9ba3tlq0 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__dr9ba3tlq1 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__dr9ba3tlq2 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__dr9ba3tlq3 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__sxsxa3tlq7 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__sxsxa3tlq8 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__sxsxa3tlq9 = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__sxsxa3tlqa = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__sxsxa3tlqb = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__su2va3tlqc = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__hsfga3tlqd = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__hsfga3tlqf = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__lxexa3tlqg = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__r27sa3tlqj = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__jd7wa3tlqk = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__evuca3tlqn = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__nik3a3tlqo = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__nik3a3tlqp = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__nik3a3tlqq = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__qc44a3tlqt = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__m8naa3tlqw = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__m8naa3tlqx = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__lj961no8tzf = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__lj961no8tzg = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__lj961no8tzh = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__lj961no8tzi = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__txlt1no8tzm = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__uj3e1no8u0x = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
-				type __cmpt__uj3e1no8u0y = StrictComponent<Label, {
-					readonly title: richtext;
-				}, undefined, undefined>;
+		namespace Components.frame {
+			type Frame1 = StrictComponent<fairygui.GButton, {
+				readonly title: UILib.Components.fontTab_richText.__cmpt__i098a3tlpi;
+			}, undefined, undefined>;
+			type Frame4 = StrictComponent<fairygui.GButton, {
+				readonly close: UILib.Components.btn.BtnWindowClose1;
+				readonly title: UILib.Components.fontTab_richText.__cmpt__i098a3tlpi;
+			}, undefined, undefined>;
+			type Frame5 = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GLoader;
+			}, 'conIsVisibleImg', undefined>;
+			type Frame6 = StrictComponent<fairygui.GButton, {
+				readonly title: UILib.Components.fontTab_richText.__cmpt__i098a3tlpi;
+			}, 'conShowTitle', undefined>;
+			type Frame7 = StrictComponent<fairygui.GButton, {
+				readonly close: UILib.Components.btn.BtnWindowClose;
+			}, undefined, undefined>;
 		}
 		namespace Components.btnAct {
-				type BtnAct1 = StrictComponent<Button, {
-					readonly redPoint: image;
-					readonly title: text;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnAct2 = StrictComponent<Button, {
-					readonly redPoint: image;
-					readonly title: text;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnAct3 = StrictComponent<Button, {
-					readonly redPoint: image;
-					readonly title: text;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnAct4 = StrictComponent<Button, {
-					readonly redPoint: image;
-					readonly title: text;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnAct5 = StrictComponent<Button, {
-					readonly redPoint: image;
-					readonly title: text;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnAct6 = StrictComponent<Button, {
-					readonly redPoint: image;
-					readonly title: text;
-				}, 'button' | 'conIsGray', undefined>;
-				type BtnAct2_1 = StrictComponent<Button, {
-					readonly redPoint: image;
-					readonly title: text;
-				}, 'button' | 'conIsGray', undefined>;
+			type BtnAct1 = StrictComponent<fairygui.GButton, {
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnAct2 = StrictComponent<fairygui.GButton, {
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnAct3 = StrictComponent<fairygui.GButton, {
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnAct4 = StrictComponent<fairygui.GButton, {
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnAct5 = StrictComponent<fairygui.GButton, {
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnAct6 = StrictComponent<fairygui.GButton, {
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnAct2_1 = StrictComponent<fairygui.GButton, {
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, 'button' | 'conIsGray', undefined>;
 		}
-		namespace Components.progressBar {
-				type ProgressBar1 = StrictComponent<ProgressBar, {
-					readonly bar: image;
-					readonly title: text;
-				}, undefined, undefined>;
-				type ProgressBar2 = StrictComponent<ProgressBar, {
-					readonly bar: image;
-					readonly title: text;
-				}, undefined, undefined>;
-				type ProgressBar3 = StrictComponent<ProgressBar, {
-					readonly bar: image;
-					readonly title: text;
-				}, undefined, undefined>;
-				type ProgressBar4 = StrictComponent<ProgressBar, {
-					readonly bar: image;
-					readonly title: text;
-				}, undefined, undefined>;
-				type ProgressBar5 = StrictComponent<ProgressBar, {
-					readonly bar: image;
-					readonly title: text;
-				}, undefined, undefined>;
-				type ProgressBar6 = StrictComponent<ProgressBar, {
-					readonly bar: image;
-					readonly title: text;
-				}, undefined, undefined>;
-				type ProgressBar7 = StrictComponent<ProgressBar, {
-					readonly bar: image;
-					readonly title: text;
-				}, undefined, undefined>;
+		namespace Components.silder {
+			type silder_com_3 = StrictComponent<fairygui.GSlider, {
+				readonly bg: fairygui.GImage;
+				readonly bar: fairygui.GImage;
+				readonly gripBg: fairygui.GImage;
+				readonly grip1: UILib.Components.silder.silder_com_3_grip;
+				readonly grip: UILib.Components.btn.BtnEmpty;
+				readonly curNum: UILib.Components.fontTab_richText.__cmpt__oeaia3tlp9;
+			}, undefined, undefined>;
+			type silder_com_3_grip = StrictComponent<fairygui.GButton, undefined, 'button', undefined>;
+		}
+		namespace Components.proBar {
+			type ProgressBarAffair = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+			}, undefined, undefined>;
+			type ProgressBarGreen = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+			}, undefined, undefined>;
+			type ProgressBarGreen1 = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type ProgressBarOrange = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type ProgressBarRed = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type ProgressBarYellow = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type ProgressBarBlue = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+				readonly title: UILib.Components.fontTab_richText.__cmpt__i098a3tlph;
+			}, undefined, undefined>;
+			type ProgressBarBlue1 = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type ProgressBarYellow1 = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+			}, undefined, undefined>;
+			type ProgressBarYellow2 = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+			}, undefined, undefined>;
+			type ProgressBar1 = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+			}, undefined, undefined>;
+		}
+		namespace Components.fontTab {
+			type __cmpt__v5p1a3tlgy = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__v5p1a3tlgz = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__v5p1a3tlh0 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__v5p1a3tlh3 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__v5p1a3tlh4 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__v5p1a3tlh5 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__v5p1a3tlh7 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__v5p1a3tlh8 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__f73xa3tlha = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__f73xa3tlhb = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__f73xa3tlhc = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__f73xa3tlhd = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__f73xa3tlhe = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__f73xa3tlhf = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__f73xa3tlhj = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__f73xa3tlhm = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__f73xa3tlhq = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__f73xa3tlhs = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__f73xa3tlht = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__f73xa3tlhx = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__f73xa3tlhy = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__f73xa3tlhz = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__kyk1a3tljh = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__kyk1a3tlji = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__kyk1a3tljj = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__kyk1a3tljk = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__kyk1a3tljl = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__kyk1a3tljm = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__kyk1a3tljn = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__kyk1a3tljo = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__kyk1a3tljp = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__kyk1a3tljq = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__kyk1a3tljr = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__kyk1a3tljt = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__kyk1a3tlju = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__kyk1a3tljv = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__e9fra3tlk5 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__e9fra3tlk6 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__e9fra3tlk7 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__e9fra3tlk8 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__dldaa3tlkf = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__dldaa3tlkg = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__tr9ia3tlku = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__tr9ia3tlkw = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__jyc6a3tlkz = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__9i4xa3tll3 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__9i4xa3tll4 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__dkjpa3tll8 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__cv0fa3tlld = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__oa3ga3tllk = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type GradientLabel = StrictComponent<fairygui.GLabel, {
+				readonly txtContent: fairygui.GRichTextField;
+				readonly maskGraph: fairygui.GGraph;
+			}, undefined, undefined>;
+			type __cmpt__gsraa3tlly = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__rq3da3tlmx = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__rq3da3tlmy = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+		}
+		namespace Components.renderer {
+			type RewardRender1 = StrictComponent<fairygui.GButton, {
+				readonly iconQuality: fairygui.GLoader;
+				readonly loaderTreasureQuality: fairygui.GLoader;
+				readonly graphAniBg: fairygui.GGraph;
+				readonly imgIcon: fairygui.GLoader;
+				readonly loaderFrame: fairygui.GLoader;
+				readonly loaderArmy: fairygui.GLoader;
+				readonly graphAni: fairygui.GGraph;
+				readonly loaderSpecial: fairygui.GLoader;
+				readonly loaderTreasureLogo: fairygui.GLoader;
+				readonly listTreasureStar: fairygui.GList;
+				readonly imgSel: fairygui.GImage;
+				readonly heroLinesQuality: fairygui.GLoader;
+				readonly txtCount: fairygui.GTextField;
+				readonly txtName: fairygui.GTextField;
+				readonly txtLv: fairygui.GTextField;
+			}, 'button' | 'conShowName' | 'conExtra' | 'conDouble' | 'conChip' | 'conArmy' | 'isGodSoldier' | 'isSpecial', undefined>;
+			type ItemCheckRender = StrictComponent<fairygui.GButton, {
+				readonly iconQuality: fairygui.GLoader;
+				readonly imgIcon: fairygui.GLoader;
+				readonly loaderFrame: fairygui.GLoader;
+				readonly txtCount: fairygui.GTextField;
+				readonly txtName: UILib.Components.fontTab_richText.__cmpt__oeaia3tlp9;
+			}, 'button', undefined>;
+			type ConsumeRender = StrictComponent<fairygui.GButton, {
+				readonly imgBg: fairygui.GLoader;
+				readonly btnItem: UILib.Components.renderer.ConsumeMask;
+				readonly title: fairygui.GRichTextField;
+			}, 'bgState', undefined>;
+			type HeroStarRender = StrictComponent<fairygui.GComponent, {
+				readonly loaderStar: fairygui.GLoader;
+			}, 'conStarColor', undefined>;
+			type RewardRender2 = StrictComponent<fairygui.GButton, {
+				readonly iconQuality: fairygui.GLoader;
+				readonly loaderTreasureQuality: fairygui.GLoader;
+				readonly graphAniBg: fairygui.GGraph;
+				readonly imgIcon: fairygui.GLoader;
+				readonly loaderFrame: fairygui.GLoader;
+				readonly loaderArmy: fairygui.GLoader;
+				readonly graphAni: fairygui.GGraph;
+				readonly loaderSpecial: fairygui.GLoader;
+				readonly loaderTreasureLogo: fairygui.GLoader;
+				readonly listTreasureStar: fairygui.GList;
+				readonly imgSel: fairygui.GImage;
+				readonly heroLinesQuality: fairygui.GLoader;
+				readonly txtCount: fairygui.GTextField;
+				readonly txtName: fairygui.GTextField;
+				readonly txtLv: fairygui.GTextField;
+			}, 'button' | 'conShowName' | 'conExtra' | 'conDouble' | 'conChip' | 'conArmy' | 'isGodSoldier' | 'isSpecial', undefined>;
+			type RewardRender3 = StrictComponent<fairygui.GButton, {
+				readonly iconQuality: fairygui.GLoader;
+				readonly loaderTreasureQuality: fairygui.GLoader;
+				readonly graphAniBg: fairygui.GGraph;
+				readonly imgIcon: fairygui.GLoader;
+				readonly loaderFrame: fairygui.GLoader;
+				readonly loaderArmy: fairygui.GLoader;
+				readonly graphAni: fairygui.GGraph;
+				readonly loaderSpecial: fairygui.GLoader;
+				readonly loaderTreasureLogo: fairygui.GLoader;
+				readonly listTreasureStar: fairygui.GList;
+				readonly imgSel: fairygui.GImage;
+				readonly heroLinesQuality: fairygui.GLoader;
+				readonly txtCount: fairygui.GTextField;
+				readonly txtName: fairygui.GTextField;
+				readonly txtLv: fairygui.GTextField;
+			}, 'button' | 'conShowName' | 'conExtra' | 'conDouble' | 'conChip' | 'conArmy' | 'isGodSoldier' | 'isSpecial', undefined>;
+			type RewardRender4 = StrictComponent<fairygui.GButton, {
+				readonly iconQuality: fairygui.GLoader;
+				readonly loaderTreasureQuality: fairygui.GLoader;
+				readonly graphAniBg: fairygui.GGraph;
+				readonly imgIcon: fairygui.GLoader;
+				readonly loaderFrame: fairygui.GLoader;
+				readonly loaderArmy: fairygui.GLoader;
+				readonly graphAni: fairygui.GGraph;
+				readonly loaderSpecial: fairygui.GLoader;
+				readonly loaderTreasureLogo: fairygui.GLoader;
+				readonly listTreasureStar: fairygui.GList;
+				readonly imgSel: fairygui.GImage;
+				readonly heroLinesQuality: fairygui.GLoader;
+				readonly txtCount: fairygui.GTextField;
+				readonly txtName: fairygui.GTextField;
+				readonly txtLv: fairygui.GTextField;
+			}, 'button' | 'conShowName' | 'conExtra' | 'conDouble' | 'conChip' | 'conArmy' | 'isGodSoldier' | 'isSpecial', undefined>;
+			type ConsumeMask = StrictComponent<fairygui.GButton, {
+				readonly loaderBg: fairygui.GLoader;
+				readonly icon: fairygui.GLoader;
+				readonly loaderFrame: fairygui.GLoader;
+			}, 'button', undefined>;
+			type RewardRenderForEffect4 = StrictComponent<fairygui.GButton, {
+				readonly rewardRender: UILib.Components.renderer.RewardRender4;
+			}, 'button', undefined>;
+			type RewardRenderForEffect1 = StrictComponent<fairygui.GButton, {
+				readonly rewardRender: UILib.Components.renderer.RewardRender1;
+			}, 'button', undefined>;
+			type RewardRenderForEffect2 = StrictComponent<fairygui.GButton, {
+				readonly rewardRender: UILib.Components.renderer.RewardRender2;
+			}, 'button', undefined>;
+			type GetWayRender = StrictComponent<fairygui.GComponent, {
+				readonly loaderIcon: fairygui.GLoader;
+				readonly btnGo: UILib.Components.btn.BtnIcon;
+				readonly listHero: fairygui.GList;
+				readonly txtName: UILib.Components.fontTab_richText.__cmpt__dr9ba3tlpw;
+				readonly txtTip: UILib.Components.fontTab_richText.__cmpt__dr9ba3tlpw;
+				readonly yyTxt: fairygui.GTextField;
+				readonly numTxt: fairygui.GTextField;
+			}, 'conShowHero' | 'conOpen' | 'conBtnIcon' | 'numCon', undefined>;
+			type RewardRenderForEffect3 = StrictComponent<fairygui.GButton, {
+				readonly rewardRender: UILib.Components.renderer.RewardRender3;
+			}, 'button', undefined>;
 		}
 		namespace Components.selectBtn {
-				type SelectBtn = StrictComponent<component, {
-					readonly loop: transition;
-					readonly select: transition;
-				}, undefined, undefined>;
+			type SelectBtn = StrictComponent<fairygui.GComponent, {
+				readonly loop: fairygui.Transition;
+				readonly select: fairygui.Transition;
+			}, undefined, undefined>;
+		}
+		namespace Components.btnArrows {
+			type BtnArrows1 = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GLoader;
+			}, 'button', undefined>;
+			type BtnArrows2 = StrictComponent<fairygui.GButton, undefined, 'button', undefined>;
+			type BtnArrows3 = StrictComponent<fairygui.GButton, undefined, 'button', undefined>;
+			type BtnArrows4 = StrictComponent<fairygui.GButton, undefined, 'button', undefined>;
+			type BtnArrows5 = StrictComponent<fairygui.GButton, {
+				readonly redPoint1: fairygui.GImage;
+			}, 'isRed', undefined>;
+		}
+		namespace Components.btnSpecial {
+			type BtnRecharge = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GLoader;
+			}, 'button', undefined>;
+			type BtnGet = StrictComponent<fairygui.GButton, {
+				readonly redPoint: fairygui.GImage;
+				readonly icon: fairygui.GLoader;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnBuy = StrictComponent<fairygui.GButton, {
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, 'button' | 'conIsGray', undefined>;
+			type BtnGoToRecharge = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GLoader;
+			}, 'button', undefined>;
+			type BtnBlue = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GLoader;
+			}, 'button', undefined>;
+			type BtnOrang = StrictComponent<fairygui.GButton, {
+				readonly redPoint: fairygui.GImage;
+				readonly icon: fairygui.GLoader;
+			}, 'button' | 'conIsGray', undefined>;
+		}
+		namespace Components.progressBar {
+			type ProgressBar1 = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type ProgressBar2 = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type ProgressBar3 = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type ProgressBar4 = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type ProgressBar5 = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type ProgressBar6 = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type ProgressBar7 = StrictComponent<fairygui.GProgressBar, {
+				readonly bar: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
 		}
 		namespace Components.fontTab_text {
-				type __cmpt__qmdq1no8u5v = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u5w = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u5x = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u5y = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u5z = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u60 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u61 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u62 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u63 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u64 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u65 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u66 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u67 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u68 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u69 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6a = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6b = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6c = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6d = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6e = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6f = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6g = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6h = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6i = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6j = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6k = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6l = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6m = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6n = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6o = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6p = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6q = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6r = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6s = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6t = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6u = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6v = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6w = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6x = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6y = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u6z = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u70 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u71 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u72 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u73 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u74 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u75 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u76 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u77 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u78 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u79 = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u7a = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u7b = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u7c = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
-				type __cmpt__qmdq1no8u7d = StrictComponent<Label, {
-					readonly title: text;
-				}, undefined, undefined>;
+			type __cmpt__qmdq1no8u5v = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u5w = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u5x = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u5y = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u5z = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u60 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u61 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u62 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u63 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u64 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u65 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u66 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u67 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u68 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u69 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6a = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6b = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6c = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6d = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6e = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6f = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6g = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6h = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6i = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6j = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6k = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6l = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6m = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6n = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6o = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6p = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6q = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6r = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6s = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6t = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6u = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6v = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6w = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6x = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6y = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u6z = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u70 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u71 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u72 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u73 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u74 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u75 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u76 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u77 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u78 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u79 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u7a = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u7b = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u7c = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__qmdq1no8u7d = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__lrlo1no8u7m = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__lrlo1no8u7n = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__lrlo1no8u7o = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__fdx41no8u7v = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__fdx41no8u7w = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
+			type __cmpt__fdx41no8u7x = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GTextField;
+			}, undefined, undefined>;
 		}
+		namespace Components.button_radio {
+			type Button_Radio1 = StrictComponent<fairygui.GButton, {
+				readonly redPoint: fairygui.GImage;
+				readonly icon: fairygui.GLoader;
+			}, 'button', undefined>;
+			type Button_Radio0 = StrictComponent<fairygui.GButton, {
+				readonly bgLoader: fairygui.GLoader;
+				readonly icon: fairygui.GLoader;
+				readonly title: fairygui.GTextField;
+				readonly redPoint: fairygui.GImage;
+			}, 'button', undefined>;
+			type Button_Radio2 = StrictComponent<fairygui.GButton, {
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GRichTextField;
+			}, 'button', undefined>;
+			type Button_Radio3 = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GLoader;
+				readonly redPoint: fairygui.GImage;
+			}, 'button' | 'conIsRight' | 'conIsCanRed', undefined>;
+			type Button_Radio4 = StrictComponent<fairygui.GButton, {
+				readonly redPoint: fairygui.GImage;
+				readonly title: fairygui.GTextField;
+			}, 'button', undefined>;
 		}
+		namespace Components.countryRender {
+			type CountryCityRender = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GLoader;
+			}, undefined, undefined>;
+			type CountrySmallRender = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GLoader;
+			}, undefined, undefined>;
+			type CountryFightSmallRender = StrictComponent<fairygui.GButton, {
+				readonly icon: fairygui.GLoader;
+			}, undefined, undefined>;
+		}
+		namespace Components.button_checkbox {
+			type Button_Check1 = StrictComponent<fairygui.GButton, undefined, 'button', undefined>;
+			type Button_Check2 = StrictComponent<fairygui.GButton, undefined, 'button', undefined>;
+			type Button_Check3 = StrictComponent<fairygui.GButton, {
+				readonly title: fairygui.GRichTextField;
+			}, 'button', undefined>;
+			type Button_Check4 = StrictComponent<fairygui.GButton, undefined, 'button', undefined>;
+			type Button_Check5 = StrictComponent<fairygui.GButton, {
+				readonly title: fairygui.GRichTextField;
+			}, 'button', undefined>;
+		}
+		namespace Components.fontTab_richText {
+			type __cmpt__oeaia3tlp6 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__oeaia3tlp8 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__oeaia3tlp9 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__oeaia3tlpa = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__oeaia3tlpb = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__oeaia3tlpc = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__oeaia3tlpd = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__oeaia3tlpe = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__oeaia3tlpf = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__oeaia3tlpg = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__i098a3tlph = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__i098a3tlpi = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__i098a3tlpj = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__i098a3tlpk = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__i098a3tlpl = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__s0zca3tlpo = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__s0zca3tlpp = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__dr9ba3tlpq = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__dr9ba3tlpr = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__dr9ba3tlps = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__dr9ba3tlpt = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__dr9ba3tlpu = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__dr9ba3tlpv = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__dr9ba3tlpw = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__dr9ba3tlpx = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__dr9ba3tlpy = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__dr9ba3tlq0 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__dr9ba3tlq1 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__dr9ba3tlq2 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__dr9ba3tlq3 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__sxsxa3tlq7 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__sxsxa3tlq8 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__sxsxa3tlq9 = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__sxsxa3tlqa = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__sxsxa3tlqb = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__su2va3tlqc = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__hsfga3tlqd = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__hsfga3tlqf = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__lxexa3tlqg = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__r27sa3tlqj = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__jd7wa3tlqk = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__evuca3tlqn = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__nik3a3tlqo = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__nik3a3tlqp = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__nik3a3tlqq = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__qc44a3tlqt = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__m8naa3tlqw = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__m8naa3tlqx = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__lj961no8tzf = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__lj961no8tzg = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__lj961no8tzh = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__lj961no8tzi = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__txlt1no8tzm = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__uj3e1no8u0x = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__uj3e1no8u0y = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__fdx41no8u7p = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__fdx41no8u7q = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__fdx41no8u7r = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__fdx41no8u7s = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__fdx41no8u7t = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+			type __cmpt__fdx41no8u7u = StrictComponent<fairygui.GLabel, {
+				readonly title: fairygui.GRichTextField;
+			}, undefined, undefined>;
+		}
+	}
 }

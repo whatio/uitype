@@ -8,11 +8,11 @@ import * as chalk from 'chalk';
  * @export
  */
 export function startup(): void {
-  const pkg = require('../package.json');
+  const pkg = require('../../package.json');
   const version = pkg.version;
 
   program
-    .version(version, '-v, --version', 'uitypes-cli 版本.')
+    .version(version, '-v, --version', 'uitype 版本.')
     .usage('<command> [options]')
     .helpOption('-h, --help', '帮助.');
 
