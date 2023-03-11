@@ -1,0 +1,14 @@
+{
+  "name": "publish-uitype",
+  "displayName": "publish-uitype",
+  "description": "发布组件类型dts",
+  "version": "1.0",
+  "author": {
+    "name": "github-yeah"
+  },
+  "icon": "",
+  "main": "main.js",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
