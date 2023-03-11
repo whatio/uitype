@@ -1,6 +1,5 @@
 import { program } from 'commander';
 import { loadCommands } from './cli.loader';
-import * as chalk from 'chalk';
 
 /**
  * @description startup
@@ -35,7 +34,7 @@ export function startup(): void {
  */
 function invalidCommandHandler(): void {
   program.on('command:*', () => {
-    console.error(`[ERROR]\n无效命令：${chalk.red(program.args.join(' '))}`);
-    console.log(`[Log] 使用${chalk.red('--help')}查看命令列表`);
+    console.error(`[ERROR]\n无效命令：${program.args.join(' ')}`);
+    console.log(`[Log] 使用'--help'查看命令列表`);
   });
 }
