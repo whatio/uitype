@@ -5,7 +5,7 @@ function startup(): void {
   console.time(timeLabel);
 
   compileProject('test/ui-project', {
-    outFile: 'test/ui-project-dist/uitype.d.ts'
+    outFile: 'test/ui-project/output-dts/uitype.d.ts'
   });
   
   // compileProject('F:/cocos/tool/FairyGUI-Project', { 
