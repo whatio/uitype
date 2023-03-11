@@ -1,0 +1,11 @@
+{
+	"name": "uitype",
+	"displayName": "uitype",
+	"description": "导出组件类型dts",
+	"version": "1.0.1",
+	"author": {
+		"name": "github-yeah"
+	},
+	"icon": "",
+	"main": "main.lua"
+}

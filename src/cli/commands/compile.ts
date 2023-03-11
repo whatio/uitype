@@ -8,7 +8,7 @@ import { compileProject, CompilerOptions } from '../../compiler';
  * @param {Command} program
  */
 export function loadCompileCommand(program: Command): void {
-  const cmd = program.command('compile').alias('c').description('编译项目')
+  const cmd = program.command('compile').alias('c').description('编译项目');
   cmd.requiredOption('-r, --root <path>', '项目根目录[必选]');
   cmd.requiredOption('-o, --outFile <path>', '项目输出文件路径[必选]');
   cmd.option('-p, --publishName <nmespace>', '发布名称-根命名空间');
