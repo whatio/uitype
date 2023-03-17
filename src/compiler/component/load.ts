@@ -18,9 +18,19 @@ export function loadComponent(id: string, configFile: string): Component | strin
     return undefined;
   }
 
+  
   // 解析自定义组件扩展类型
   const tag = config.attributes?.extention ?? config.name;
   const extention = tagTypeOf(tag);
+
+  // 发布名
+  let publishName = basename(configFile, ".xml");
+  if (legally_name_reg.test(publishName) === false) {
+    // 对名字不合法的组件，不予导出
+    return extention;
+    // 如果需要对名字不合法的组件导出，重新按照id命名
+    publishName = componentIdToName(id);
+  }
 
   // 解析属性列表
   const attributes: ComponentAttribute[] = [];
@@ -49,12 +59,7 @@ export function loadComponent(id: string, configFile: string): Component | strin
   if(attributes.length === 0) {
     return extention;
   }
-
-  // 发布名
-  let publishName = basename(configFile, ".xml");
-  if (legally_name_reg.test(publishName) === false) {
-    publishName = componentIdToName(id);
-  }
+  
   return { id, publishName, extention, attributes };
 }
 

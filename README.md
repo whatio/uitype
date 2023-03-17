@@ -93,13 +93,13 @@ declare namespace uit {
 // 创建一个自定义的组件，并通过as来转换成生成的类型
 const view = fairygui.UIPackage.createObject("test", "TestView") as uit.test.components.TestView;
 // 当调用`getChild`时，参数会自动提示 'btn' | 'cmpt'，且返回值类型非常明确
-const child = view.getChild("cmpt");
+const child = view.getChild("cmpt", true);
 // 因为`child`类型非常明确为`components.TestComponent`，因此后续继续有代码提示
-const next = child.getChild("title");
+const next = child.getChild("title", true);
 // 当调用`getController`时，参数会自动提示 'c1' | 'c2'
-const ctrl = view.getController("c1");
+const ctrl = view.getController("c1", true);
 // 当调用`getController`时，参数会自动提示 't1' | 't2'
-const trans = view.getTransition("t1");
+const trans = view.getTransition("t1", true);
 
 // 也可以使用`Proxy`代理属性的获取，这个很简单，有手就行
 ```

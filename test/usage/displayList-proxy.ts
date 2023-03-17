@@ -1,5 +1,5 @@
 // DisplayListProxy
-export type DisplayListProxy<T> = T extends { __DisplayListType__?: infer R } 
+export type DisplayListProxy<T> = T extends { __DisplayListType__?: infer R }
   ? { [P in keyof R]: R[P]; }
   : unknown;
 
@@ -8,14 +8,14 @@ export type DisplayListProxy<T> = T extends { __DisplayListType__?: infer R }
  * @param {T} component 组件
  * @return {*}  {DisplayListProxy<T>}
  */
-export function displayListProxyOf<T extends { 
+export function displayListProxyOf<T extends {
   __DisplayListType__?: unknown;
   getChild(name: unknown): unknown;
 }>(component: T): DisplayListProxy<T> {
   const pxy = new Proxy({} as DisplayListProxy<T>, {
     get(target, p) {
       const name = p as keyof DisplayListProxy<T>;
-      if(name in target) {
+      if (name in target) {
         return target[name];
       }
       const value = component.getChild(name);

@@ -7,9 +7,9 @@ function startup(): void {
   compileProject('test/ui-project', {
     outFile: 'test/ui-project/output-dts/uitype.d.ts'
   });
-  
-  // compileProject('F:/cocos/tool/FairyGUI-Project', { 
-  //   outFile: 'F:/cocos/client/cocos_slg/assets/lib/uitype/uitype.d.ts'
+
+  // compileProject('F:/cocos_rpg/trunk/tool/FairyGUI-Project', { 
+  //   outFile: 'F:/cocos_rpg/trunk/client/cocos_rpg/assets/lib/uitype/index.d.ts'
   // });
 
   console.timeEnd(timeLabel);

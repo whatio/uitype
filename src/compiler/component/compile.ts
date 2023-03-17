@@ -30,6 +30,13 @@ export function compileComponent(
       default:
         // 设置类型为内置组件的属性
         if(attribute.tag !== 'component' || attribute.src === undefined) {
+          // 输入文本类型特殊处理
+          if(attribute.tag === 'text') {
+            const textAttr = attribute as ComponentAttribute & {input?: 'true'};
+            if(textAttr.input === 'true') {
+              attribute.tag = 'textinput';
+            }
+          }
           const type = tagTypeOf(attribute.tag);
           displayList.push(`readonly ${attribute.name}: ${type};`);
           return;
@@ -46,8 +53,8 @@ export function compileComponent(
   });
 
 
-  const CtrlType = controllers.length > 0 ? controllers.join(" | ") : "undefined";
-  const TransType = transitions.length > 0 ? transitions.join(" | ") : "undefined";
+  const CtrlType = controllers.length > 0 ? controllers.join(" | ") : "never";
+  const TransType = transitions.length > 0 ? transitions.join(" | ") : "never";
 
   // 导出空显示列表组件
   if (displayList.length === 0) {
