@@ -2,7 +2,9 @@
   "extends": "../src/tsconfig-base.json",
   "compilerOptions": {
    "types": ["node"],
-   "rootDir": "."
+   "rootDir": ".",
+   "experimentalDecorators": true,
+   "emitDecoratorMetadata": true
   },
   "references": [
     {"path": "../src/compiler"},
