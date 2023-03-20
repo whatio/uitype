@@ -66,7 +66,6 @@ export function compileProject(projectRoot: string, options?: CompilerOptions): 
 
   // 项目代码片段
   const projectSnippet: CodeSnippet = [];
-  projectSnippet.push(`import * as fairygui from 'fairygui-cc';`);
   projectSnippet.push(...HeaderCommentSnippet);
   projectSnippet.push(`declare namespace ${publishName ?? 'uit'} {`);
   

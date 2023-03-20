@@ -22,10 +22,10 @@ export function compileComponent(
   attributes.forEach(attribute => {
     switch(attribute.tag) {
       case 'controller':
-        controllers.push(`'${attribute.name}'`)
+        controllers.push(`'${attribute.name}'`);
         break;
       case 'transition':
-        transitions.push(`'${attribute.name}'`)
+        transitions.push(`'${attribute.name}'`);
         break;
       default:
         // 设置类型为内置组件的属性

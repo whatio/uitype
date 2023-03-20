@@ -1,4 +1,3 @@
-import * as fairygui from 'fairygui-cc';
 /**
  * @description uitype
  * - 没有设置导出且没有被其他组件引用的组件将不会被导出类型!
@@ -38,33 +37,33 @@ declare namespace uit {
 	// ==================================== strict ======================================
 	import __pkg__mtvco5r4 = Test;
 	namespace Test {
-		type TestWindow = StrictComponent<fairygui.GComponent, {
+		type TestWindow = StrictComponent<import('fairygui-cc').GComponent, {
 			readonly uilibWindow: UILib.UILibWindow;
 			readonly testComponent: Test.Components.TestComponent;
-			readonly myShape: fairygui.GGraph;
+			readonly myShape: import('fairygui-cc').GGraph;
 		}, never, never>;
 		namespace Components {
-			type TestComponent = StrictComponent<fairygui.GComponent, {
+			type TestComponent = StrictComponent<import('fairygui-cc').GComponent, {
 				readonly testComponent: UILib.Components.UILibComponent;
-				readonly title: fairygui.GTextField;
+				readonly title: import('fairygui-cc').GTextField;
 			}, never, never>;
 		}
 	}
 	import __pkg__v8r15bds = UILib;
 	namespace UILib {
-		type UILibWindow = StrictComponent<fairygui.GComponent, {
+		type UILibWindow = StrictComponent<import('fairygui-cc').GComponent, {
 			readonly testComponent: UILib.Components.UILibComponent;
-			readonly title: fairygui.GTextField;
+			readonly title: import('fairygui-cc').GTextField;
 		}, never, never>;
 		namespace Components {
-			type UILibComponent = StrictComponent<fairygui.GComponent, {
+			type UILibComponent = StrictComponent<import('fairygui-cc').GComponent, {
 				readonly btnAdd: UILib.Components.btn.BtnAdd;
-				readonly txtName: fairygui.GTextField;
+				readonly txtName: import('fairygui-cc').GTextField;
 			}, 'ctrl' | 'ctrl2', never>;
 		}
 		namespace Components.btn {
-			type BtnAdd = StrictComponent<fairygui.GButton, {
-				readonly icon: fairygui.GLoader;
+			type BtnAdd = StrictComponent<import('fairygui-cc').GButton, {
+				readonly icon: import('fairygui-cc').GLoader;
 			}, 'button' | 'conIsGray', never>;
 		}
 	}
