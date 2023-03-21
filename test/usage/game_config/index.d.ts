@@ -1,5 +1,5 @@
 declare module game_config {
-  interface ItemCFG {
+  class ItemCFG {
     ID: number;
     Name: string;
   }

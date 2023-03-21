@@ -4,7 +4,7 @@
    "types": ["node"],
    "rootDir": ".",
    "experimentalDecorators": true,
-   "emitDecoratorMetadata": true
+   "emitDecoratorMetadata": true,
   },
   "references": [
     {"path": "../src/compiler"},

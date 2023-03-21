@@ -1,7 +1,6 @@
-module game_config {
-  export class ItemCFG {
-    get htmlName(): string {
-      return `${this.Name}`;
-    }
+export interface ItemCFG extends game_config.ItemCFG{};
+export class ItemCFG {
+  get htmlName(): string {
+    return `${this.Name}`;
   }
 }
