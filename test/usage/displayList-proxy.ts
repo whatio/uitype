@@ -1,5 +1,5 @@
 // DisplayListProxy
-export type DisplayListProxy<T> = T extends { __DisplayListType__?: infer R }
+export type DisplayListProxy<Component> = Component extends { __DisplayListType__?: infer R }
   ? { [P in keyof R]: R[P]; }
   : unknown;
 

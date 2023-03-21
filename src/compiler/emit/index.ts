@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync } from "fs";
+import { existsSync, mkdirSync, writeFileSync } from "fs";
 import { dirname } from "path";
 
 /**
@@ -8,6 +8,8 @@ import { dirname } from "path";
  */
 export function emit(content: string, path: string): void {
   const dir = dirname(path);
-  mkdirSync(dir, { recursive: true });
+  if(existsSync(dir) === false) {
+    mkdirSync(dir, { recursive: true });
+  }
   writeFileSync(path, content);
 }
