@@ -24,27 +24,3 @@ export function controllerProxyOf<T extends { getController(name: unknown): unkn
   });
   return pxy;
 }
-
-
-export const decoratorOf: MethodDecorator = (_, __, descriptor) => {
-  let proxy: ControllerProxy<unknown> | undefined = undefined;
-  descriptor.get = function (this: { view?: { getController(name: unknown): unknown }; }) {
-    if(proxy !== undefined) {
-      return proxy;
-    }
-    const that = this;
-    proxy = new Proxy({} as any, {
-      get(target, name: string) {
-        let result = target[name];
-        if(result !== undefined) {
-          return result;
-        }
-
-        result = that.view?.getController(name);
-        target[name] = result;
-        return result;
-      }
-    });
-    return proxy!;
-  };
-};

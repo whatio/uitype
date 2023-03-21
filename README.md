@@ -47,7 +47,7 @@ uitype compile --root 项目目录 --outFile 类型文件输出地址
 uitype compile --root 项目目录 --outFile 类型文件输出地址 --include A B C
 ```
 
-### 代码调用
+### 通过代码调用
 
 ```ts
 // 引入包
@@ -68,18 +68,18 @@ declare namespace uit {
   namespace test {
     namespace components {
       type TestView = StrictComponent<
-        fairygui.GComponent,
+        import("fairygui-cc").GComponent,
         {
-          readonly btn: fairygui.GButton;
+          readonly btn: import("fairygui-cc").GButton;
           readonly cmpt: components.TestComponent;
         },
         "c1" | "c2",
         "t1" | "t2"
       >;
       type TestComponent = StrictComponent<
-        fairygui.GComponent,
+        import("fairygui-cc").GComponent,
         {
-          readonly title: fairygui.GTextField;
+          readonly title: import("fairygui-cc").GTextField;
         },
         undefined,
         undefined
@@ -91,7 +91,8 @@ declare namespace uit {
 
 ```ts
 // 创建一个自定义的组件，并通过as来转换成生成的类型
-const view = fairygui.UIPackage.createObject("test", "TestView") as uit.test.components.TestView;
+import { UIPackage } from "fairygui-cc";
+const view = UIPackage.createObject("test", "TestView") as uit.test.components.TestView;
 // 当调用`getChild`时，参数会自动提示 'btn' | 'cmpt'，且返回值类型非常明确
 const child = view.getChild("cmpt", true);
 // 因为`child`类型非常明确为`components.TestComponent`，因此后续继续有代码提示
@@ -101,7 +102,36 @@ const ctrl = view.getController("c1", true);
 // 当调用`getController`时，参数会自动提示 't1' | 't2'
 const trans = view.getTransition("t1", true);
 
-// 也可以使用`Proxy`代理属性的获取，这个很简单，有手就行
+// 也可以使用`Proxy`代理属性的获取
+// 比如`Controller`代理，其他的代理也类似，有手就行~
+export type ControllerProxy<Component> = Component extends { getController(name: infer Name, strict: true): infer R }
+  ? NonNullable<Name> extends never
+    ? never
+    : { [P in Name extends string ? Name : never]: R }
+  : never;
+export function controllerProxyOf<T extends { getController(name: unknown): unknown }>(
+  component: T
+): ControllerProxy<T> {
+  const pxy = new Proxy({} as ControllerProxy<T>, {
+    get(target, p) {
+      const name = p as keyof ControllerProxy<T>;
+      if (name in target) {
+        return target[name];
+      }
+      const value = component.getController(name);
+      target[name] = value as ControllerProxy<T>[typeof name];
+      return value;
+    },
+  });
+  return pxy;
+}
+
+// 直接有代码提示，不用给每个控制前设置引用
+const ctrls = controllerProxyOf(view);
+ctrls.c1.selectedIndex = 0;
+ctrls.c2.selectedIndex = 1;
+
+// 也可以配合装饰器自动创建`Proxy`，这个很简单，有手就行
 ```
 
 ## 开发环境
@@ -136,7 +166,3 @@ npm run build
 # 开发模式
 npm run dev
 ```
-
-## 未完待续
-
-1. 新增 dts 压缩选项设置

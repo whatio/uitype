@@ -1,5 +1,5 @@
 import { existsSync, readFileSync } from "fs";
-import { Element, xml2js } from "xml-js";
+import { type Element, xml2js } from "xml-js";
 
 /**
  * @description 配置

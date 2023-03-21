@@ -1,8 +1,8 @@
-import { Config, loadConfig } from "../loader";
+import { basename } from "path";
+import type { Component, ComponentAttribute } from "./types";
+import { type Config, loadConfig } from "../loader";
 import { componentIdToName, legally_name_reg, sys_name_reg } from "../utils";
 import { tagTypeOf } from "../project";
-import type { Component, ComponentAttribute } from "./types";
-import { basename } from "path";
 
 /**
  * @description 加载组件

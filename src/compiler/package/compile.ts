@@ -1,4 +1,4 @@
-import { compileComponent, ComponentAttribute } from "../component";
+import { compileComponent, type ComponentAttribute } from "../component";
 import type { CodeSnippet } from "../snippet";
 import type { Package } from "./types";
 

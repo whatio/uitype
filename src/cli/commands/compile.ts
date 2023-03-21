@@ -1,5 +1,5 @@
 import { type Command } from 'commander';
-import { compileProject, CompilerOptions } from '../../compiler';
+import { type CompilerOptions, compileProject } from '../../compiler';
 
 /**
  * @description 加载编译命令
